@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="#" className="text-primary hover:text-primary/80 coffee-transition flex items-center">
                 <img src="/foto-uploads/socialmedia.png" alt="Instagram" className="w-6 h-6 mr-2" />
-                @kaves_cz
+                kaves_web
               </a>
             </div>
           </div>
@@ -48,7 +48,7 @@ const Footer = () => {
                 <img src="/foto-uploads/email.png" alt="E-mail" className="w-6 h-6 inline-block mr-2" /> info@joinkaves.cz
               </li>
               <li className="text-muted-foreground">
-                <img src="/foto-uploads/socialmedia.png" alt="Sociální sítě" className="w-6 h-6 inline-block mr-2" /> @kaves_cz
+                <img src="/foto-uploads/socialmedia.png" alt="Sociální sítě" href="https://www.instagram.com/kaves_cz className="w-6 h-6 inline-block mr-2" /> @kaves_cz
               </li>
             </ul>
           </div>
