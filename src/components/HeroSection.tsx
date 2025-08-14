@@ -3,22 +3,22 @@ import { Button } from "@/components/ui/button";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-      {/* Background Image on the right side */}
+      {/* Background Image */}
       <div 
-        className="absolute right-0 top-0 w-3/5 h-full bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-30"
         style={{
           backgroundImage: `url(/foto-uploads/109fc6b4-ad73-422f-956a-d974d57b7aa0.png)`,
         }}
       />
       
-      {/* Gradient overlay for blending */}
-      <div className="absolute right-0 top-0 w-3/5 h-full bg-gradient-to-l from-transparent via-background/20 to-background" />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 w-full h-full bg-gradient-to-b from-background/50 via-background/70 to-background/90" />
       
       {/* Content */}
       <div className="relative z-10 w-full">
-        <div className="flex items-center min-h-screen">
-          {/* Left Content - full width from left edge to image */}
-          <div className="w-2/5 space-y-8 bg-background/80 backdrop-blur-sm p-8 rounded-r-2xl ml-0">
+        <div className="flex items-center justify-center min-h-screen">
+          {/* Centered Content */}
+          <div className="max-w-4xl mx-auto space-y-8 bg-background/90 backdrop-blur-sm p-12 rounded-2xl text-center">
             {/* Small intro text */}
             <p className="text-lg md:text-xl mb-4 font-medium">
               <span className="text-primary">KÁVES </span> 
@@ -39,7 +39,7 @@ const HeroSection = () => {
             
 
             {/* CTA Button */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center justify-center gap-4">
               <Button 
                 variant="default" 
                 size="lg" 
@@ -85,15 +85,11 @@ const HeroSection = () => {
 
 
           </div>
-
-          {/* Right side - space for image */}
-          <div className="w-3/5"></div>
         </div>
 
-        
-      {/* Benefits - Clean List - moved up */}
-      <div className="pt-0 pb-0 pl-4 -mt-60">
-        <div className="flex flex-wrap gap-6">
+        {/* Benefits - Clean List */}
+        <div className="pt-8 pb-8">
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           <div className="flex items-center space-x-3">
             <div className="text-2xl font-bold text-primary">60%</div>
             <span className="text-foreground">Ziskovost</span>
