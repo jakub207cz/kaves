@@ -18,7 +18,7 @@ const HeroSection = () => {
       <div className="relative z-10 w-full">
         <div className="flex items-center justify-center min-h-screen">
           {/* Centered Content */}
-          <div className="max-w-4xl mx-auto space-y-8 bg-background/90 backdrop-blur-sm p-12 rounded-2xl text-center">
+          <div className="max-w-4xl mx-auto space-y-8 p-12 rounded-2xl text-center">
             {/* Small intro text */}
             <p className="text-lg md:text-xl mb-4 font-medium">
               <span className="text-primary">KÁVES </span> 
