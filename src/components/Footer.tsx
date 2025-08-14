@@ -48,7 +48,9 @@ const Footer = () => {
                 <img src="/foto-uploads/email.png" alt="E-mail" className="w-6 h-6 inline-block mr-2" /> info@joinkaves.cz
               </li>
               <li className="text-muted-foreground">
-                <img src="/foto-uploads/socialmedia.png" alt="Sociální sítě" href="https://www.instagram.com/kaves_cz className="w-6 h-6 inline-block mr-2" /> @kaves_cz
+                <a href="https://www.instagram.com/kaves_cz" className="flex items-center hover:text-primary coffee-transition">
+                  <img src="/foto-uploads/socialmedia.png" alt="Sociální sítě" className="w-6 h-6 mr-2" /> @kaves_cz
+                </a>
               </li>
             </ul>
           </div>
