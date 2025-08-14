@@ -88,7 +88,7 @@ const HeroSection = () => {
         </div>
 
         {/* Benefits - Clean List */}
-        <div className="mt-0 pb-8">
+        <div className="-mt-10 pb-8">
           <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           <div className="flex items-center space-x-3">
             <div className="text-2xl font-bold text-primary">60%</div>
