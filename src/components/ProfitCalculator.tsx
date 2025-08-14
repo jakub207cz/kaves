@@ -81,7 +81,7 @@ const ProfitCalculator = () => {
                         <Slider
                           value={coffeePrice}
                           onValueChange={setCoffeePrice}
-                          min={14.15}
+                          min={14.16}
                           max={140}
                           step={1}
                           className="w-full"
