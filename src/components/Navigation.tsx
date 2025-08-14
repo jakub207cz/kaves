@@ -265,7 +265,7 @@ const Navigation = () => {
                 }}
                 className="bg-primary text-primary-foreground block px-3 py-2 rounded-md text-base font-medium mt-4 w-full text-left"
               >
-                {("common.getOffer")}
+                {("Časté dotazy")}
               </button>
             </div>
           </div>
