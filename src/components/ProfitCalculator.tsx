@@ -4,8 +4,10 @@ import { Slider } from "@/components/ui/slider";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const ProfitCalculator = () => {
+  const { t } = useTranslation();
   const [dailyCoffees, setDailyCoffees] = useState([80]);
   const [coffeePrice, setCoffeePrice] = useState([50]);
   
@@ -38,10 +40,10 @@ const ProfitCalculator = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Spočítejte si, kolik <span className="text-primary">vyděláte</span>
+            {t('calculator.title')} <span className="text-primary">{t('calculator.title').split(' ').pop()}</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Interaktivní kalkulačka vám ukáže reálný výnos z vaší kávové stanice KÁVES
+            {t('calculator.subtitle')}
           </p>
         </div>
 

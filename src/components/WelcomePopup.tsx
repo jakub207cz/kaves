@@ -2,8 +2,10 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { X } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const WelcomePopup = () => {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -37,7 +39,7 @@ const WelcomePopup = () => {
 
         <DialogHeader className="text-center space-y-4 pt-6">
           <DialogTitle className="text-2xl font-bold text-foreground">
-            Získejte jedinečnou možnost investice!
+            {t('popup.title')}
           </DialogTitle>
         </DialogHeader>
 
