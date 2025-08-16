@@ -448,5 +448,20 @@
     "close": "Закрыть",
     "submit": "Отправить",
     "cancel": "Отмена"
+  },
+  "alt": {
+    "coffeeImage": "Чашка качественного кофе из нашего предложения",
+    "formIcon": "Форма",
+    "consultationIcon": "Консультация",
+    "locationIcon": "Выбор локации",
+    "trainingIcon": "Обучение и подготовка",
+    "openingIcon": "Открытие кофейни",
+    "coffeeBeansIcon": "Зерна кофе",
+    "milkIcon": "Молоко",
+    "coffeeMachineIcon": "Кофемашина",
+    "phoneIcon": "Телефон",
+    "socialMediaIcon": "Социальные сети",
+    "kavesLogo": "KÁVES Логотип",
+    "instagramIcon": "Instagram"
   }
 }

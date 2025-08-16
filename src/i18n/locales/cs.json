@@ -448,5 +448,20 @@
     "close": "Zavřít",
     "submit": "Odeslat",
     "cancel": "Zrušit"
+  },
+  "alt": {
+    "coffeeImage": "Šálek kvalitní kávy z naší nabídky",
+    "formIcon": "Formulář",
+    "consultationIcon": "Konzultace",
+    "locationIcon": "Výběr lokality",
+    "trainingIcon": "Zaškolení a příprava",
+    "openingIcon": "Otevření kavárny",
+    "coffeeBeansIcon": "Kávová zrna",
+    "milkIcon": "Mléko",
+    "coffeeMachineIcon": "Kávovar",
+    "phoneIcon": "Telefon",
+    "socialMediaIcon": "Sociální sítě",
+    "kavesLogo": "KÁVES Logo",
+    "instagramIcon": "Instagram"
   }
 }

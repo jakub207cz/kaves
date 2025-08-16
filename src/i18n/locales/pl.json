@@ -448,5 +448,20 @@
     "close": "Zamknij",
     "submit": "Wyślij",
     "cancel": "Anuluj"
+  },
+  "alt": {
+    "coffeeImage": "Filiżanka jakościowej kawy z naszej oferty",
+    "formIcon": "Formularz",
+    "consultationIcon": "Konsultacja",
+    "locationIcon": "Wybór lokalizacji",
+    "trainingIcon": "Szkolenie i przygotowanie",
+    "openingIcon": "Otwarcie kawiarni",
+    "coffeeBeansIcon": "Ziarna kawy",
+    "milkIcon": "Mleko",
+    "coffeeMachineIcon": "Ekspres do kawy",
+    "phoneIcon": "Telefon",
+    "socialMediaIcon": "Media społecznościowe",
+    "kavesLogo": "KÁVES Logo",
+    "instagramIcon": "Instagram"
   }
 }

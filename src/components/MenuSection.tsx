@@ -55,7 +55,7 @@ const MenuSection = () => {
             <div className="grid md:grid-cols-3 gap-8 mt-8">
               <div className="text-center">
                 <div className="mb-4">
-                  <img src="/foto-uploads/grains.png" alt="Kávová zrna" className="w-16 h-16 mx-auto" />
+                  <img src="/foto-uploads/grains.png" alt={t('alt.coffeeBeansIcon')} className="w-16 h-16 mx-auto" />
                 </div>
                 <h4 className="font-semibold text-foreground mb-2">{t('menu.ownRoastery')}</h4>
                 <p className="text-muted-foreground text-sm">{t('menu.roasteryDesc')}</p>
@@ -63,7 +63,7 @@ const MenuSection = () => {
               
               <div className="text-center">
                 <div className="mb-4">
-                  <img src="/foto-uploads/milk.png" alt="Mléko" className="w-16 h-16 mx-auto" />
+                  <img src="/foto-uploads/milk.png" alt={t('alt.milkIcon')} className="w-16 h-16 mx-auto" />
                 </div>
                 <h4 className="font-semibold text-foreground mb-2">{t('menu.qualityMilk')}</h4>
                 <p className="text-muted-foreground text-sm">{t('menu.milkDesc')}</p>
@@ -71,7 +71,7 @@ const MenuSection = () => {
               
               <div className="text-center">
                 <div className="mb-4">
-                  <img src="/foto-uploads/machine.png" alt="Kávovar" className="w-16 h-16 mx-auto" />
+                  <img src="/foto-uploads/machine.png" alt={t('alt.coffeeMachineIcon')} className="w-16 h-16 mx-auto" />
                 </div>
                 <h4 className="font-semibold text-foreground mb-2">{t('menu.automaticPrep')}</h4>
                 <p className="text-muted-foreground text-sm">{t('menu.prepDesc')}</p>

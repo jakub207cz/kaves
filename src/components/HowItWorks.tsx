@@ -13,11 +13,11 @@ const HowItWorks = () => {
   const { t } = useTranslation();
   
   const stepIcons = [
-    <img src="/foto-uploads/formular.png" alt="Formulář" className="w-11 h-11 inline-block align-middle" />,
-    <img src="/foto-uploads/talking.png" alt="Konzultace" className="w-11 h-11 inline-block align-middle" />,
-    <img src="/foto-uploads/location.png" alt="Výběr lokality" className="w-11 h-11 inline-block align-middle" />,
-    <img src="/foto-uploads/teaching.png" alt="Zaškolení a příprava" className="w-11 h-11 inline-block align-middle" />,
-    <img src="/foto-uploads/money.png" alt="Otevření kavárny" className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/formular.png" alt={t('alt.formIcon')} className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/talking.png" alt={t('alt.consultationIcon')} className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/location.png" alt={t('alt.locationIcon')} className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/teaching.png" alt={t('alt.trainingIcon')} className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/money.png" alt={t('alt.openingIcon')} className="w-11 h-11 inline-block align-middle" />,
   ];
 
   const steps = (t('howItWorks.steps', { returnObjects: true }) as any[]).map((step: any, index: number) => ({

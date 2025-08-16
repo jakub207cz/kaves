@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="flex items-center gap-3 mb-4">
               <img 
                 src="/foto-uploads/0a8efab2-c6b6-47a9-a86f-520c4e2ec8da.png"
-                alt="KÁVES Logo"
+                alt={t('alt.kavesLogo')}
                 className="h-8 w-auto"
               />
               <h3 className="text-2xl font-bold text-primary"></h3>
@@ -21,7 +21,7 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary hover:text-primary/80 coffee-transition flex items-center">
-                <img src="/foto-uploads/socialmedia.png" alt="Instagram" className="w-6 h-6 mr-2" />
+                <img src="/foto-uploads/socialmedia.png" alt={t('alt.instagramIcon')} className="w-6 h-6 mr-2" />
                 kaves_web
               </a>
             </div>
@@ -44,14 +44,14 @@ const Footer = () => {
             <h4 className="font-semibold text-foreground mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2">
               <li className="text-muted-foreground">
-                <img src="/foto-uploads/phone.png" alt="Telefon" className="w-6 h-6 inline-block mr-2" /> +420 777 445 798
+                <img src="/foto-uploads/phone.png" alt={t('alt.phoneIcon')} className="w-6 h-6 inline-block mr-2" /> +420 777 445 798
               </li>
               <li className="text-muted-foreground">
                 <img src="/foto-uploads/email.png" alt="E-mail" className="w-6 h-6 inline-block mr-2" /> info@joinkaves.cz
               </li>
               <li className="text-muted-foreground">
                 <a href="https://www.instagram.com/kaves_cz" className="flex items-center hover:text-primary coffee-transition">
-                  <img src="/foto-uploads/socialmedia.png" alt="Sociální sítě" className="w-6 h-6 mr-2" /> @kaves_cz
+                  <img src="/foto-uploads/socialmedia.png" alt={t('alt.socialMediaIcon')} className="w-6 h-6 mr-2" /> @kaves_cz
                 </a>
               </li>
             </ul>

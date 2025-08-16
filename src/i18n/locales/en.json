@@ -448,5 +448,20 @@
     "close": "Close",
     "submit": "Submit",
     "cancel": "Cancel"
+  },
+  "alt": {
+    "coffeeImage": "Cup of quality coffee from our offer",
+    "formIcon": "Form",
+    "consultationIcon": "Consultation",
+    "locationIcon": "Location selection",
+    "trainingIcon": "Training and preparation",
+    "openingIcon": "Coffee shop opening",
+    "coffeeBeansIcon": "Coffee beans",
+    "milkIcon": "Milk",
+    "coffeeMachineIcon": "Coffee machine",
+    "phoneIcon": "Phone",
+    "socialMediaIcon": "Social media",
+    "kavesLogo": "KÁVES Logo",
+    "instagramIcon": "Instagram"
   }
 }

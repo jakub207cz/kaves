@@ -93,7 +93,7 @@ const ContactSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
-            <img src="/foto-uploads/c070cc0f-12b7-4933-b65b-885e034832df.png" alt="KÁVES Logo" className="h-10 w-auto" />
+            <img src="/foto-uploads/c070cc0f-12b7-4933-b65b-885e034832df.png" alt={t('alt.kavesLogo')} className="h-10 w-auto" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             {t('contact.title')}
@@ -208,7 +208,7 @@ const ContactSection = () => {
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
-                  <img src="/foto-uploads/phone.png" alt="Telefon" className="w-8 h-8" />
+                  <img src="/foto-uploads/phone.png" alt={t('alt.phoneIcon')} className="w-8 h-8" />
                   <div>
                     <div className="font-semibold text-foreground">{t('contact.phone')}</div>
                     <div className="text-muted-foreground">+420 777 445 798</div>
@@ -222,7 +222,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
-                  <img src="/foto-uploads/socialmedia.png" alt="Sociální sítě" className="w-8 h-8" />
+                  <img src="/foto-uploads/socialmedia.png" alt={t('alt.socialMediaIcon')} className="w-8 h-8" />
                   <div>
                     <div className="font-semibold text-foreground">Instagram</div>
                     <div className="text-muted-foreground">@kaves_cz</div>

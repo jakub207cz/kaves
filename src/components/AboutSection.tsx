@@ -27,7 +27,7 @@ const AboutSection = () => {
             <div className="coffee-card rounded-2xl overflow-hidden">
               <img 
                 src="/foto-uploads/2b98a344-db94-404b-86c0-f5505fe93079.png"
-                alt="Šálek kvalitní kávy z naší nabídky"
+                alt={t('alt.coffeeImage')}
                 className="w-full h-96 object-cover"
               />
             </div>
