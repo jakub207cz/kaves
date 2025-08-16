@@ -100,11 +100,214 @@
     }
   },
   "contact": {
-    "phone": "Telefon",
+    "title": "Připraveni začít?",
+    "subtitle": "Zaujala vás KÁVES stanice? Spojte se s námi a připravíme vám řešení na míru.",
+    "formTitle": "Získat nezávaznou nabídku",
+    "name": "Jméno",
+    "namePlaceholder": "Vaše jméno",
     "email": "E-mail",
-    "form": "Formulář",
+    "emailPlaceholder": "vas@email.cz",
+    "phone": "Telefon",
+    "phonePlaceholder": "+420 xxx xxx xxx",
+    "cooperationModel": "Preferovaný model spolupráce",
+    "selectModel": "Vyberte model",
+    "buyModel": "Nákup kávovaru - plné vlastnictví",
+    "rentModel": "Pronájem - bez vstupní investice",
+    "shareModel": "Sdílení zisku - minimální investice",
+    "dontKnowModel": "Nevím, poraďte mi",
+    "message": "Zpráva (volitelné)",
+    "messagePlaceholder": "Další informace, dotazy...",
+    "submitting": "Odesílám...",
+    "getOffer": "Získat nezávaznou nabídku",
+    "privacyText": "Odesláním formuláře souhlasíte se zpracováním osobních údajů v souladu s",
+    "privacyLink": "zásadami ochrany osobních údajů",
+    "contactInfo": "Kontaktní informace",
     "goToContactForm": "Přejít na kontaktní formulář",
-    "copied": "Zkopírováno!"
+    "copied": "Zkopírováno!",
+    "formSuccess": "Formulář byl úspěšně odeslán!",
+    "formSuccessDesc": "Ozveme se vám do 24 hodin s prvotní analýzou.",
+    "formError": "Chyba při odesílání",
+    "formErrorDesc": "Zkuste to prosím znovu nebo nás kontaktujte telefonicky.",
+    "benefits": {
+      "title": "Co získáte kontaktováním",
+      "items": [
+        "Nezávaznou konzultaci zdarma",
+        "Analýzu vhodnosti vaší lokace",
+        "Individuální cenovou nabídku",
+        "Návrh optimálního modelu spolupráce",
+        "Odpovědi na všechny vaše otázky"
+      ]
+    },
+    "fastResponse": {
+      "title": "Rychlá odpověď zaručena",
+      "subtitle": "Ozveme se vám do 24 hodin s prvotní analýzou a návrhem řešení.",
+      "express": "Expresní konzultace",
+      "callDirect": "Volejte přímo: +420 777 445 798"
+    }
+  },
+  "footer": {
+    "description": "Prémiové samoobslužné kávové stanice pro firmy, školy a veřejná místa. Vydělávejte s kvalitní kávou bez starostí.",
+    "quickLinks": "Rychlé odkazy",
+    "aboutUs": "O nás",
+    "partnership": "Partnerství",
+    "calculator": "Kalkulačka",
+    "locations": "Kde fungujeme",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "copyright": "© 2025 Káves. Všechna práva vyhrazena.",
+    "privacy": "Ochrana osobních údajů",
+    "terms": "Obchodní podmínky"
+  },
+  "calculator": {
+    "title": "Spočítejte si, kolik vyděláte",
+    "subtitle": "Interaktivní kalkulačka vám ukáže reálný výnos z vaší kávové stanice KÁVES",
+    "settings": "Nastavte parametry:",
+    "dailyCoffees": "Průměrný počet káv denně:",
+    "coffeePrice": "Prodejní cena kávy:",
+    "operatingCosts": "Provozní náklady",
+    "results": "Váš výnos:",
+    "dailySold": "Denně prodáte:",
+    "monthlyProfit": "Měsíční čistý výdělek:",
+    "paybackTime": "Návratnost investice:",
+    "yearlyRevenue": "Roční výnos:",
+    "wantThisProfit": "Chci takový výnos!",
+    "months": "měsíce",
+    "coffees": "káv",
+    "examples": [
+      { "title": "Malá kancelář", "description": "káv/den (50 Kč za kelímek)" },
+      { "title": "Střední firma", "description": "káv/den (50 Kč za kelímek)" },
+      { "title": "Velká korporace", "description": "káv/den (50 Kč za kelímek)" }
+    ]
+  },
+  "partnerBenefits": {
+    "title": "Staňte se partnerem – vydělávejte s kávou bez starostí",
+    "subtitle": "Připojte se k síti úspěšných partnerů KÁVES a začněte vydělávat s prémiovou kávou",
+    "cooperation": "Možnosti spolupráce:",
+    "becomePartner": "Chci se stát partnerem",
+    "monthlyEarnings": "měsíčně",
+    "recommended": "⭐ Doporučeno",
+    "benefits": [
+      { "title": "Nízká investice", "description": "od 180 000 Kč" },
+      { "title": "Vysoká marže", "description": "až 80 % z ceny kávy" },
+      { "title": "Rychlá návratnost", "description": "2–6 měsíců" },
+      { "title": "Pasivní příjem", "description": "kávovar běží nonstop" },
+      { "title": "Podpora marketingu", "description": "a školení" }
+    ],
+    "models": [
+      { "title": "Nákup kávovaru", "description": "Investice od 180 000 Kč, 100% zisku pro vás" },
+      { "title": "Pronájem", "description": "Bez počáteční investice, měsíční platba" },
+      { "title": "Sdílení zisku", "description": "Minimum investice, sdílený výnos" }
+    ]
+  },
+  "locations": {
+    "title": "Kde KÁVES funguje",
+    "subtitle": "Zákazníci a zaměstnanci už si kávu vychutnávají po celé České republice",
+    "categories": [
+      "Vzdělávací instituce",
+      "Zdravotnictví",
+      "Kultura a sport"
+    ],
+    "stats": [
+      { "number": "50+", "description": "Aktivních stanic" },
+      { "number": "95%", "description": "Spokojenost partnerů" },
+      { "number": "10k+", "description": "Káv denně" },
+      { "number": "3 roky", "description": "Na trhu" }
+    ],
+    "testimonials": {
+      "title": "Co říkají naši partneři",
+      "reviews": [
+        {
+          "text": "Skvělé řešení pro naši školu. Studenti si rychle oblíbili kvalitní kávu a my máme pasivní příjem.",
+          "author": "Ředitel SŠ Ostrava"
+        },
+        {
+          "text": "Instalace proběhla hladce, servis je bezproblémový. Kávovar pracuje spolehlivě už rok.",
+          "author": "Správce nemocnice"
+        },
+        {
+          "text": "Vynikající káva a skvělá podpora od týmu KÁVES. Doporučujeme všem.",
+          "author": "Kulturní centrum"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Chcete být další na seznamu?",
+      "subtitle": "Připojte se k síti úspěšných partnerů a začněte vydělávat s kávou KÁVES",
+      "button": "Získat nezávaznou nabídku"
+    }
+  },
+  "menu": {
+    "title": "Nabídka nápojů",
+    "subtitle": "Každý nápoj je připraven z čerstvě mleté kávy, kvalitního mléka a volitelných sirupů",
+    "drinks": [
+      { "name": "Espresso", "description": "Intenzivní chut' černé kávy" },
+      { "name": "Cappuccino", "description": "Klasická kombinace kávy a mléka" },
+      { "name": "Flat White", "description": "Silná káva s jemným mlékem" },
+      { "name": "Latte", "description": "Mírná káva s množstvím mléka" },
+      { "name": "Dvojité espresso", "description": "Extra silné espresso" },
+      { "name": "Mocha káva", "description": "Káva s čokoládou" },
+      { "name": "Horká čokoláda", "description": "Luxusní horká čokoláda" }
+    ],
+    "quality": {
+      "title": "Kvalita na prvním místě",
+      "features": [
+        { "title": "Vlastní pražírna", "description": "Čerstvě pražená zrna každý týden" },
+        { "title": "Kvalitní mléko", "description": "Pouze prémiové čerstvé mléko" },
+        { "title": "Automatická příprava", "description": "Konzistentní kvalita každé kávy" }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Časté dotazy",
+    "subtitle": "Odpovědi na nejčastější otázky o kávových stanicích KÁVES",
+    "questions": [
+      {
+        "question": "Jaká je investice?",
+        "answer": "Od 180 000 Kč při nákupu kávovaru. U pronájmu začínáme od 0 Kč počáteční investice s měsíčním poplatkem. Nabízíme také model sdílení zisku."
+      },
+      {
+        "question": "Kolik si vydělám?",
+        "answer": "Běžně 12–48 000 Kč měsíčně, dle lokace a vytíženosti. Výdělek závisí na počtu prodaných káv a místních podmínkách. Pomůžeme vám najít ideální místo."
+      },
+      {
+        "question": "Musím kávovar obsluhovat?",
+        "answer": "Ne, vše servisujeme a doplňujeme za vás. Naši technici pravidelně doplňují kávu, čistí přístroje a starají se o technický provoz."
+      },
+      {
+        "question": "Je potřeba voda?",
+        "answer": "Ne, kávovar má vlastní filtr a nádrž. Stačí pouze elektrická zásuvka a 1 m² plochy. Vodní nádrž se doplňuje při servisních návštěvách."
+      },
+      {
+        "question": "Jak dlouhá je návratnost investice?",
+        "answer": "Typicky 2–6 měsíců v závislosti na vytíženosti lokace. U frekventovaných míst může být návratnost ještě rychlejší."
+      },
+      {
+        "question": "Jaké jsou provozní náklady?",
+        "answer": "Nízká spotřeba elektřiny (15 kWh/měs), servis a suroviny zajištěny v ceně. Celkové měsíční náklady cca 1 500 Kč."
+      },
+      {
+        "question": "Můžu si vybrat typ kávy?",
+        "answer": "Ano, nabízíme výběr z našich prémiových směsí z vlastní pražírny. Můžeme přizpůsobit nabídku vašim zákazníkům."
+      },
+      {
+        "question": "Jak funguje platba za kávu?",
+        "answer": "Kávovar přijímá platby kartou, mobilem i hotovost. Všechny transakce jsou automaticky evidovány a dostáváte přehledné výkazy."
+      }
+    ],
+    "stillHaveQuestions": {
+      "title": "Stále máte otázky?",
+      "subtitle": "Rádi odpovíme na všechny vaše dotazy a připravíme nabídku na míru",
+      "writeEmail": "Napsat email",
+      "copied": "Zkopírováno!"
+    }
+  },
+  "popup": {
+    "title": "Získejte jedinečnou možnost investice!",
+    "subtitle": "Otevřete vlastní kávovnu za pouhých 318 000 Kč",
+    "monthlyRevenue": "měsíční výnos od",
+    "limited": "Omezeného počtu franchis na rok 2025",
+    "getOffer": "Chci získat nabídku",
+    "maybeLater": "Možná později"
   },
   "common": {
     "loading": "Načítám...",

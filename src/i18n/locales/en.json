@@ -100,11 +100,214 @@
     }
   },
   "contact": {
-    "phone": "Phone",
+    "title": "Ready to start?",
+    "subtitle": "Interested in KÁVES station? Contact us and we'll prepare a tailored solution for you.",
+    "formTitle": "Get a non-binding offer",
+    "name": "Name",
+    "namePlaceholder": "Your name",
     "email": "Email",
-    "form": "Form",
+    "emailPlaceholder": "your@email.com",
+    "phone": "Phone",
+    "phonePlaceholder": "+420 xxx xxx xxx",
+    "cooperationModel": "Preferred cooperation model",
+    "selectModel": "Select model",
+    "buyModel": "Coffee machine purchase - full ownership",
+    "rentModel": "Rental - no initial investment",
+    "shareModel": "Profit sharing - minimal investment",
+    "dontKnowModel": "I don't know, advise me",
+    "message": "Message (optional)",
+    "messagePlaceholder": "Additional information, questions...",
+    "submitting": "Submitting...",
+    "getOffer": "Get a non-binding offer",
+    "privacyText": "By submitting the form, you agree to the processing of personal data in accordance with",
+    "privacyLink": "privacy policy",
+    "contactInfo": "Contact information",
     "goToContactForm": "Go to contact form",
-    "copied": "Copied!"
+    "copied": "Copied!",
+    "formSuccess": "Form submitted successfully!",
+    "formSuccessDesc": "We'll contact you within 24 hours with initial analysis.",
+    "formError": "Error submitting form",
+    "formErrorDesc": "Please try again or contact us by phone.",
+    "benefits": {
+      "title": "What you get by contacting",
+      "items": [
+        "Free non-binding consultation",
+        "Analysis of your location suitability",
+        "Individual price offer",
+        "Optimal cooperation model proposal",
+        "Answers to all your questions"
+      ]
+    },
+    "fastResponse": {
+      "title": "Fast response guaranteed",
+      "subtitle": "We'll contact you within 24 hours with initial analysis and solution proposal.",
+      "express": "Express consultation",
+      "callDirect": "Call directly: +420 777 445 798"
+    }
+  },
+  "footer": {
+    "description": "Premium self-service coffee stations for companies, schools and public places. Make money with quality coffee without worries.",
+    "quickLinks": "Quick links",
+    "aboutUs": "About Us",
+    "partnership": "Partnership",
+    "calculator": "Calculator",
+    "locations": "Where we operate",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "copyright": "© 2025 Káves. All rights reserved.",
+    "privacy": "Privacy policy",
+    "terms": "Terms and conditions"
+  },
+  "calculator": {
+    "title": "Calculate how much you'll earn",
+    "subtitle": "Interactive calculator shows you real return from your KÁVES coffee station",
+    "settings": "Set parameters:",
+    "dailyCoffees": "Average number of coffees per day:",
+    "coffeePrice": "Coffee selling price:",
+    "operatingCosts": "Operating costs",
+    "results": "Your return:",
+    "dailySold": "Daily sales:",
+    "monthlyProfit": "Monthly net profit:",
+    "paybackTime": "Return on investment:",
+    "yearlyRevenue": "Annual revenue:",
+    "wantThisProfit": "I want this profit!",
+    "months": "months",
+    "coffees": "coffees",
+    "examples": [
+      { "title": "Small office", "description": "coffees/day (50 CZK per cup)" },
+      { "title": "Medium company", "description": "coffees/day (50 CZK per cup)" },
+      { "title": "Large corporation", "description": "coffees/day (50 CZK per cup)" }
+    ]
+  },
+  "partnerBenefits": {
+    "title": "Become a partner – earn with coffee without worries",
+    "subtitle": "Join the network of successful KÁVES partners and start earning with premium coffee",
+    "cooperation": "Cooperation options:",
+    "becomePartner": "I want to become a partner",
+    "monthlyEarnings": "monthly",
+    "recommended": "⭐ Recommended",
+    "benefits": [
+      { "title": "Low investment", "description": "from 180,000 CZK" },
+      { "title": "High margin", "description": "up to 80% of coffee price" },
+      { "title": "Fast payback", "description": "2–6 months" },
+      { "title": "Passive income", "description": "coffee machine runs 24/7" },
+      { "title": "Marketing support", "description": "and training" }
+    ],
+    "models": [
+      { "title": "Coffee machine purchase", "description": "Investment from 180,000 CZK, 100% profit for you" },
+      { "title": "Rental", "description": "No initial investment, monthly fee" },
+      { "title": "Profit sharing", "description": "Minimum investment, shared revenue" }
+    ]
+  },
+  "locations": {
+    "title": "Where KÁVES works",
+    "subtitle": "Customers and employees are already enjoying coffee throughout the Czech Republic",
+    "categories": [
+      "Educational institutions",
+      "Healthcare",
+      "Culture and sports"
+    ],
+    "stats": [
+      { "number": "50+", "description": "Active stations" },
+      { "number": "95%", "description": "Partner satisfaction" },
+      { "number": "10k+", "description": "Coffees daily" },
+      { "number": "3 years", "description": "On the market" }
+    ],
+    "testimonials": {
+      "title": "What our partners say",
+      "reviews": [
+        {
+          "text": "Great solution for our school. Students quickly loved the quality coffee and we have passive income.",
+          "author": "Principal of SS Ostrava"
+        },
+        {
+          "text": "Installation went smoothly, service is trouble-free. Coffee machine has been working reliably for a year.",
+          "author": "Hospital administrator"
+        },
+        {
+          "text": "Excellent coffee and great support from the KÁVES team. We recommend to everyone.",
+          "author": "Cultural center"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Want to be next on the list?",
+      "subtitle": "Join the network of successful partners and start earning with KÁVES coffee",
+      "button": "Get a non-binding offer"
+    }
+  },
+  "menu": {
+    "title": "Beverage menu",
+    "subtitle": "Every drink is prepared from freshly ground coffee, quality milk and optional syrups",
+    "drinks": [
+      { "name": "Espresso", "description": "Intense black coffee taste" },
+      { "name": "Cappuccino", "description": "Classic combination of coffee and milk" },
+      { "name": "Flat White", "description": "Strong coffee with smooth milk" },
+      { "name": "Latte", "description": "Mild coffee with plenty of milk" },
+      { "name": "Double espresso", "description": "Extra strong espresso" },
+      { "name": "Mocha coffee", "description": "Coffee with chocolate" },
+      { "name": "Hot chocolate", "description": "Luxury hot chocolate" }
+    ],
+    "quality": {
+      "title": "Quality first",
+      "features": [
+        { "title": "Own roastery", "description": "Freshly roasted beans every week" },
+        { "title": "Quality milk", "description": "Only premium fresh milk" },
+        { "title": "Automatic preparation", "description": "Consistent quality of every coffee" }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "subtitle": "Answers to the most common questions about KÁVES coffee stations",
+    "questions": [
+      {
+        "question": "What is the investment?",
+        "answer": "From 180,000 CZK when buying a coffee machine. For rental, we start from 0 CZK initial investment with monthly fee. We also offer profit sharing model."
+      },
+      {
+        "question": "How much will I earn?",
+        "answer": "Usually 12–48,000 CZK monthly, depending on location and traffic. Earnings depend on number of coffees sold and local conditions. We'll help you find the ideal location."
+      },
+      {
+        "question": "Do I need to operate the coffee machine?",
+        "answer": "No, we service and supply everything for you. Our technicians regularly refill coffee, clean machines and take care of technical operation."
+      },
+      {
+        "question": "Is water needed?",
+        "answer": "No, the coffee machine has its own filter and tank. Only electrical outlet and 1 m² of space needed. Water tank is refilled during service visits."
+      },
+      {
+        "question": "How long is the payback period?",
+        "answer": "Typically 2–6 months depending on location traffic. At busy locations, payback can be even faster."
+      },
+      {
+        "question": "What are the operating costs?",
+        "answer": "Low electricity consumption (15 kWh/month), service and supplies included in price. Total monthly costs about 1,500 CZK."
+      },
+      {
+        "question": "Can I choose the type of coffee?",
+        "answer": "Yes, we offer selection from our premium blends from our own roastery. We can customize the offer to your customers."
+      },
+      {
+        "question": "How does payment for coffee work?",
+        "answer": "Coffee machine accepts card, mobile and cash payments. All transactions are automatically recorded and you receive clear reports."
+      }
+    ],
+    "stillHaveQuestions": {
+      "title": "Still have questions?",
+      "subtitle": "We're happy to answer all your questions and prepare a tailored offer",
+      "writeEmail": "Write email",
+      "copied": "Copied!"
+    }
+  },
+  "popup": {
+    "title": "Get a unique investment opportunity!",
+    "subtitle": "Open your own coffee shop for just 318,000 CZK",
+    "monthlyRevenue": "monthly revenue from",
+    "limited": "Limited number of franchises for 2025",
+    "getOffer": "I want to get an offer",
+    "maybeLater": "Maybe later"
   },
   "common": {
     "loading": "Loading...",

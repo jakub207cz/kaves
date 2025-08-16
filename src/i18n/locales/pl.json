@@ -100,11 +100,214 @@
     }
   },
   "contact": {
-    "phone": "Telefon",
+    "title": "Gotowy do startu?",
+    "subtitle": "Zainteresowała Cię stacja KÁVES? Skontaktuj się z nami, a przygotujemy rozwiązanie na miarę.",
+    "formTitle": "Otrzymaj niezobowiązującą ofertę",
+    "name": "Imię",
+    "namePlaceholder": "Twoje imię",
     "email": "Email",
-    "form": "Formularz",
+    "emailPlaceholder": "twoj@email.pl",
+    "phone": "Telefon",
+    "phonePlaceholder": "+48 xxx xxx xxx",
+    "cooperationModel": "Preferowany model współpracy",
+    "selectModel": "Wybierz model",
+    "buyModel": "Zakup ekspresu - pełna własność",
+    "rentModel": "Wynajem - bez początkowej inwestycji",
+    "shareModel": "Podział zysków - minimalna inwestycja",
+    "dontKnowModel": "Nie wiem, doradzcie mi",
+    "message": "Wiadomość (opcjonalnie)",
+    "messagePlaceholder": "Dodatkowe informacje, pytania...",
+    "submitting": "Wysyłam...",
+    "getOffer": "Otrzymaj niezobowiązującą ofertę",
+    "privacyText": "Wysyłając formularz wyrażasz zgodę na przetwarzanie danych osobowych zgodnie z",
+    "privacyLink": "polityką prywatności",
+    "contactInfo": "Informacje kontaktowe",
     "goToContactForm": "Przejdź do formularza kontaktowego",
-    "copied": "Skopiowano!"
+    "copied": "Skopiowano!",
+    "formSuccess": "Formularz wysłany pomyślnie!",
+    "formSuccessDesc": "Skontaktujemy się w ciągu 24 godzin z wstępną analizą.",
+    "formError": "Błąd podczas wysyłania",
+    "formErrorDesc": "Spróbuj ponownie lub skontaktuj się telefonicznie.",
+    "benefits": {
+      "title": "Co otrzymasz kontaktując się",
+      "items": [
+        "Bezpłatną niezobowiązującą konsultację",
+        "Analizę przydatności Twojej lokalizacji",
+        "Indywidualną ofertę cenową",
+        "Propozycję optymalnego modelu współpracy",
+        "Odpowiedzi na wszystkie Twoje pytania"
+      ]
+    },
+    "fastResponse": {
+      "title": "Szybka odpowiedź gwarantowana",
+      "subtitle": "Skontaktujemy się w ciągu 24 godzin z wstępną analizą i propozycją rozwiązania.",
+      "express": "Ekspresowa konsultacja",
+      "callDirect": "Dzwoń bezpośrednio: +420 777 445 798"
+    }
+  },
+  "footer": {
+    "description": "Premium samoobsługowe stacje kawowe dla firm, szkół i miejsc publicznych. Zarabiaj na wysokiej jakości kawie bez zmartwień.",
+    "quickLinks": "Szybkie linki",
+    "aboutUs": "O nas",
+    "partnership": "Partnerstwo",
+    "calculator": "Kalkulator",
+    "locations": "Gdzie działamy",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "copyright": "© 2025 Káves. Wszystkie prawa zastrzeżone.",
+    "privacy": "Polityka prywatności",
+    "terms": "Regulamin"
+  },
+  "calculator": {
+    "title": "Oblicz ile zarobisz",
+    "subtitle": "Interaktywny kalkulator pokaże Ci rzeczywisty zwrot z Twojej stacji kawowej KÁVES",
+    "settings": "Ustaw parametry:",
+    "dailyCoffees": "Średnia liczba kaw dziennie:",
+    "coffeePrice": "Cena sprzedaży kawy:",
+    "operatingCosts": "Koszty operacyjne",
+    "results": "Twój zwrot:",
+    "dailySold": "Dzienna sprzedaż:",
+    "monthlyProfit": "Miesięczny zysk netto:",
+    "paybackTime": "Zwrot z inwestycji:",
+    "yearlyRevenue": "Roczne przychody:",
+    "wantThisProfit": "Chcę taki zysk!",
+    "months": "miesięcy",
+    "coffees": "kaw",
+    "examples": [
+      { "title": "Małe biuro", "description": "kaw/dzień (50 CZK za kubek)" },
+      { "title": "Średnia firma", "description": "kaw/dzień (50 CZK za kubek)" },
+      { "title": "Duża korporacja", "description": "kaw/dzień (50 CZK za kubek)" }
+    ]
+  },
+  "partnerBenefits": {
+    "title": "Zostań partnerem – zarabiaj na kawie bez zmartwień",
+    "subtitle": "Dołącz do sieci udanych partnerów KÁVES i zacznij zarabiać na premium kawie",
+    "cooperation": "Opcje współpracy:",
+    "becomePartner": "Chcę zostać partnerem",
+    "monthlyEarnings": "miesięcznie",
+    "recommended": "⭐ Polecane",
+    "benefits": [
+      { "title": "Niska inwestycja", "description": "od 180 000 CZK" },
+      { "title": "Wysoka marża", "description": "do 80% z ceny kawy" },
+      { "title": "Szybki zwrot", "description": "2–6 miesięcy" },
+      { "title": "Pasywny dochód", "description": "ekspres pracuje 24/7" },
+      { "title": "Wsparcie marketingowe", "description": "i szkolenia" }
+    ],
+    "models": [
+      { "title": "Zakup ekspresu", "description": "Inwestycja od 180 000 CZK, 100% zysku dla Ciebie" },
+      { "title": "Wynajem", "description": "Bez początkowej inwestycji, miesięczna opłata" },
+      { "title": "Podział zysków", "description": "Minimalna inwestycja, wspólne przychody" }
+    ]
+  },
+  "locations": {
+    "title": "Gdzie działa KÁVES",
+    "subtitle": "Klienci i pracownicy już delektują się kawą w całej Republice Czeskiej",
+    "categories": [
+      "Instytucje edukacyjne",
+      "Opieka zdrowotna",
+      "Kultura i sport"
+    ],
+    "stats": [
+      { "number": "50+", "description": "Aktywnych stacji" },
+      { "number": "95%", "description": "Zadowolenie partnerów" },
+      { "number": "10k+", "description": "Kaw dziennie" },
+      { "number": "3 lata", "description": "Na rynku" }
+    ],
+    "testimonials": {
+      "title": "Co mówią nasi partnerzy",
+      "reviews": [
+        {
+          "text": "Świetne rozwiązanie dla naszej szkoły. Studenci szybko pokochali wysokiej jakości kawę, a my mamy pasywny dochód.",
+          "author": "Dyrektor SS Ostrawa"
+        },
+        {
+          "text": "Instalacja przebiegła gładko, serwis bezproblemowy. Ekspres pracuje niezawodnie już rok.",
+          "author": "Administrator szpitala"
+        },
+        {
+          "text": "Doskonała kawa i świetne wsparcie od zespołu KÁVES. Polecamy wszystkim.",
+          "author": "Centrum kulturalne"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Chcesz być następny na liście?",
+      "subtitle": "Dołącz do sieci udanych partnerów i zacznij zarabiać z kawą KÁVES",
+      "button": "Otrzymaj niezobowiązującą ofertę"
+    }
+  },
+  "menu": {
+    "title": "Menu napojów",
+    "subtitle": "Każdy napój jest przygotowywany ze świeżo mielonej kawy, wysokiej jakości mleka i opcjonalnych syropów",
+    "drinks": [
+      { "name": "Espresso", "description": "Intensywny smak czarnej kawy" },
+      { "name": "Cappuccino", "description": "Klasyczna kombinacja kawy i mleka" },
+      { "name": "Flat White", "description": "Mocna kawa z delikatnym mlekiem" },
+      { "name": "Latte", "description": "Łagodna kawa z dużą ilością mleka" },
+      { "name": "Podwójne espresso", "description": "Extra mocne espresso" },
+      { "name": "Kawa mocha", "description": "Kawa z czekoladą" },
+      { "name": "Gorąca czekolada", "description": "Luksusowa gorąca czekolada" }
+    ],
+    "quality": {
+      "title": "Jakość na pierwszym miejscu",
+      "features": [
+        { "title": "Własna palarnia", "description": "Świeżo palone ziarna co tydzień" },
+        { "title": "Wysokiej jakości mleko", "description": "Tylko premium świeże mleko" },
+        { "title": "Automatyczne przygotowanie", "description": "Stała jakość każdej kawy" }
+      ]
+    }
+  },
+  "faq": {
+    "title": "Często zadawane pytania",
+    "subtitle": "Odpowiedzi na najczęstsze pytania o stacje kawowe KÁVES",
+    "questions": [
+      {
+        "question": "Jaka jest inwestycja?",
+        "answer": "Od 180 000 CZK przy zakupie ekspresu. Przy wynajmie zaczynamy od 0 CZK inwestycji początkowej z miesięczną opłatą. Oferujemy także model dzielenia się zyskami."
+      },
+      {
+        "question": "Ile zarobię?",
+        "answer": "Zazwyczaj 12–48 000 CZK miesięcznie, w zależności od lokalizacji i natężenia ruchu. Zarobki zależą od liczby sprzedanych kaw i warunków lokalnych. Pomożemy znaleźć idealną lokalizację."
+      },
+      {
+        "question": "Czy muszę obsługiwać ekspres?",
+        "answer": "Nie, wszystko serwisujemy i uzupełniamy za Ciebie. Nasi technicy regularnie uzupełniają kawę, czyszczą urządzenia i dbają o obsługę techniczną."
+      },
+      {
+        "question": "Czy potrzebna jest woda?",
+        "answer": "Nie, ekspres ma własny filtr i zbiornik. Potrzeba tylko gniazdka elektrycznego i 1 m² powierzchni. Zbiornik wody jest uzupełniany podczas wizyt serwisowych."
+      },
+      {
+        "question": "Jak długi jest okres zwrotu?",
+        "answer": "Zazwyczaj 2–6 miesięcy w zależności od natężenia ruchu w lokalizacji. W ruchliwych miejscach zwrot może być jeszcze szybszy."
+      },
+      {
+        "question": "Jakie są koszty operacyjne?",
+        "answer": "Niskie zużycie energii (15 kWh/miesiąc), serwis i surowce wliczone w cenę. Całkowite miesięczne koszty około 1 500 CZK."
+      },
+      {
+        "question": "Czy mogę wybrać rodzaj kawy?",
+        "answer": "Tak, oferujemy wybór z naszych premium mieszanek z własnej palarni. Możemy dostosować ofertę do Twoich klientów."
+      },
+      {
+        "question": "Jak działa płatność za kawę?",
+        "answer": "Ekspres przyjmuje płatności kartą, telefonem i gotówką. Wszystkie transakcje są automatycznie rejestrowane i otrzymujesz przejrzyste raporty."
+      }
+    ],
+    "stillHaveQuestions": {
+      "title": "Nadal masz pytania?",
+      "subtitle": "Chętnie odpowiemy na wszystkie Twoje pytania i przygotujemy ofertę na miarę",
+      "writeEmail": "Napisz email",
+      "copied": "Skopiowano!"
+    }
+  },
+  "popup": {
+    "title": "Otrzymaj wyjątkową możliwość inwestycji!",
+    "subtitle": "Otwórz własną kawiarnię za jedyne 318 000 CZK",
+    "monthlyRevenue": "miesięczny przychód od",
+    "limited": "Ograniczona liczba franczyz na rok 2025",
+    "getOffer": "Chcę otrzymać ofertę",
+    "maybeLater": "Może później"
   },
   "common": {
     "loading": "Ładowanie...",
