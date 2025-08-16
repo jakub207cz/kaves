@@ -54,13 +54,13 @@ const ProfitCalculator = () => {
               <div className="space-y-8">
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-6">
-                    Nastavte parametry:
+                    {t('calculator.setParameters')}
                   </h3>
                   
                     <div className="space-y-6">
                       <div>
                         <label className="block text-foreground font-medium mb-4">
-                          Průměrný počet káv denně: <span className="text-primary font-bold">{dailyCoffees[0]}</span>
+                          {t('calculator.averageCoffees')} <span className="text-primary font-bold">{dailyCoffees[0]}</span>
                         </label>
                         <Slider
                           value={dailyCoffees}
@@ -71,14 +71,14 @@ const ProfitCalculator = () => {
                           className="w-full"
                         />
                         <div className="flex justify-between text-sm text-muted-foreground mt-2">
-                          <span>13 káv</span>
-                          <span>140 káv</span>
+                          <span>13 {t('calculator.coffees')}</span>
+                          <span>140 {t('calculator.coffees')}</span>
                         </div>
                       </div>
 
                       <div>
                         <label className="block text-foreground font-medium mb-4">
-                          Prodejní cena kávy: <span className="text-primary font-bold">{coffeePrice[0]} Kč</span>
+                          {t('calculator.sellingPrice')} <span className="text-primary font-bold">{coffeePrice[0]} Kč</span>
                         </label>
                         <Slider
                           value={coffeePrice}
@@ -95,8 +95,8 @@ const ProfitCalculator = () => {
                       </div>
 
                        <div className="coffee-card p-4 rounded-lg">
-                         <div className="text-primary font-semibold">Provozní náklady</div>
-                         <div className="text-2xl font-bold text-foreground">{monthlyCosts.toLocaleString()} Kč/měs</div>
+                         <div className="text-primary font-semibold">{t('calculator.operatingCosts')}</div>
+                         <div className="text-2xl font-bold text-foreground">{monthlyCosts.toLocaleString()} Kč{t('calculator.perMonth')}</div>
                        </div>
                     </div>
                 </div>
@@ -105,22 +105,22 @@ const ProfitCalculator = () => {
               {/* Results */}
               <div className="space-y-6">
                 <h3 className="text-xl font-semibold text-foreground mb-6">
-                  Váš výnos:
+                  {t('calculator.yourRevenue')}
                 </h3>
 
                 <div className="space-y-4">
                   <div className="bg-gradient-coffee p-6 rounded-xl text-center">
                     <div className="text-primary-foreground text-lg font-medium mb-2">
-                      Denně prodáte:
+                      {t('calculator.dailySales')}
                     </div>
                     <div className="text-4xl font-bold text-primary-foreground">
-                      {dailyCoffees[0]} káv
+                      {dailyCoffees[0]} {t('calculator.coffees')}
                     </div>
                   </div>
 
                   <div className="bg-primary p-6 rounded-xl text-center shadow-warm">
                     <div className="text-primary-foreground text-lg font-medium mb-2">
-                      Měsíční čistý výdělek:
+                      {t('calculator.monthlyProfit')}
                     </div>
                     <div className="text-4xl font-bold text-primary-foreground">
                       {monthlyProfit.toLocaleString()} Kč
@@ -129,10 +129,10 @@ const ProfitCalculator = () => {
 
                   <div className="bg-secondary p-6 rounded-xl text-center">
                     <div className="text-secondary-foreground text-lg font-medium mb-2">
-                      Návratnost investice:
+                      {t('calculator.paybackTime')}
                     </div>
                     <div className="text-3xl font-bold text-secondary-foreground">
-                      {paybackMonths} měsíce
+                      {paybackMonths} {t('calculator.months')}
                     </div>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const ProfitCalculator = () => {
                 {/* Additional Info */}
                 <div className="coffee-card p-4 rounded-lg border border-primary/20">
                   <div className="text-center">
-                    <div className="text-primary font-semibold mb-2">Roční výnos:</div>
+                    <div className="text-primary font-semibold mb-2">{t('calculator.annualProfit')}:</div>
                     <div className="text-2xl font-bold text-foreground">
                       {(monthlyProfit * 12).toLocaleString()} Kč
                     </div>
@@ -153,7 +153,7 @@ const ProfitCalculator = () => {
                     className="bg-primary text-primary-foreground px-8 py-4 rounded-md font-semibold hover:bg-primary/90 coffee-transition shadow-warm"
                     onClick={scrollToForm}
                   >
-                    Chci takový výnos!
+                    {t('calculator.wantThisProfit')}
                   </Button>
                 </div>
               </div>
@@ -163,15 +163,15 @@ const ProfitCalculator = () => {
           {/* Example Cases */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">
             {[
-              { coffees: 40, location: "Malá kancelář", profit: ((50 - 14.15) * 40 * 31 - 2050) },
-              { coffees: 80, location: "Střední firma", profit: ((50 - 14.15) * 80 * 31 - 2050) },
-              { coffees: 150, location: "Velká korporace", profit: ((50 - 14.15) * 150 * 31 - 2050) }
+              { coffees: 40, location: t('calculator.smallOffice'), profit: ((50 - 14.15) * 40 * 31 - 2050) },
+              { coffees: 80, location: t('calculator.mediumCompany'), profit: ((50 - 14.15) * 80 * 31 - 2050) },
+              { coffees: 150, location: t('calculator.largeCorporation'), profit: ((50 - 14.15) * 150 * 31 - 2050) }
             ].map((example, index) => (
               <Card key={index} className="coffee-card p-6 text-center hover:scale-105 coffee-transition">
                 <h4 className="font-semibold text-primary mb-2">{example.location}</h4>
-                <div className="text-muted-foreground mb-4">{example.coffees} káv/den (50 Kč za kelímek)</div>
+                <div className="text-muted-foreground mb-4">{example.coffees} {t('calculator.coffeePerDay')} (50 Kč {t('calculator.perCup')})</div>
                 <div className="text-2xl font-bold text-foreground">
-                  {example.profit.toLocaleString()} Kč/měs
+                  {example.profit.toLocaleString()} Kč{t('calculator.perMonth')}
                 </div>
               </Card>
             ))}

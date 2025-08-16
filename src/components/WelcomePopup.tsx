@@ -46,7 +46,7 @@ const WelcomePopup = () => {
         <div className="space-y-6 py-4">
           <div className="text-center space-y-4">
             <p className="text-lg text-muted-foreground">
-              Otevřete vlastní kávovnu za pouhých{" "}
+              {t('popup.subtitle')}{" "}
               <span className="font-bold text-primary">318 000 Kč</span>
             </p>
             
@@ -55,12 +55,12 @@ const WelcomePopup = () => {
                 70 000 Kč
               </div>
               <div className="text-sm text-muted-foreground">
-                měsíční výnos od
+                {t('popup.monthlyRevenue')}
               </div>
             </div>
 
             <p className="text-sm text-muted-foreground">
-              Omezeného počtu franchis na rok 2025
+              {t('popup.limited')}
             </p>
           </div>
 
@@ -69,14 +69,14 @@ const WelcomePopup = () => {
               onClick={handleGetOffer}
               className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
             >
-              Chci získat nabídku
+              {t('popup.getOffer')}
             </Button>
             <Button 
               onClick={handleClose}
               variant="outline"
               className="flex-1"
             >
-              Možná později
+              {t('popup.maybeLater')}
             </Button>
           </div>
         </div>

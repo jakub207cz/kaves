@@ -1,8 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import businessImage from "@/assets/business-partnership.jpg";
+import { useTranslation } from "react-i18next";
 
 const PartnerBenefits = () => {
+  const { t } = useTranslation();
+  
   const scrollToForm = () => {
     const formSection = document.getElementById('contact-form-section');
     const firstInput = document.getElementById('first-input');
@@ -21,45 +24,45 @@ const PartnerBenefits = () => {
   const benefits = [
     {
       icon: "cash.png",
-      title: "Nízká investice",
-      description: "od 180 000 Kč"
+      title: t('partnerBenefits.lowInvestment'),
+      description: t('partnerBenefits.fromAmount')
     },
     {
       icon: "margin.png",
-      title: "Vysoká marže",
-      description: "až 80 % z ceny kávy"
+      title: t('partnerBenefits.highMargin'),
+      description: t('partnerBenefits.upToPercent')
     },
     {
       icon: "income.png",
-      title: "Rychlá návratnost",
-      description: "2–6 měsíců"
+      title: t('partnerBenefits.quickReturn'),
+      description: t('partnerBenefits.timeRange')
     },
     {
       icon: "money.png",
-      title: "Pasivní příjem",
-      description: "kávovar běží nonstop"
+      title: t('partnerBenefits.passiveIncome'),
+      description: t('partnerBenefits.alwaysRunning')
     },
     {
       icon: "traning.png",
-      title: "Podpora marketingu",
-      description: "a školení"
+      title: t('partnerBenefits.marketingSupport'),
+      description: t('partnerBenefits.andTraining')
     }
   ];
 
   const cooperationModels = [
     {
-      title: "Nákup kávovaru",
-      description: "Investice od 180 000 Kč, 100% zisku pro vás",
+      title: t('partnerBenefits.machinePurchase'),
+      description: t('partnerBenefits.purchaseDesc'),
       highlight: true
     },
     {
-      title: "Pronájem",
-      description: "Bez počáteční investice, měsíční platba",
+      title: t('partnerBenefits.rental'),
+      description: t('partnerBenefits.rentalDesc'),
       highlight: false
     },
     {
-      title: "Sdílení zisku",
-      description: "Minimum investice, sdílený výnos",
+      title: t('partnerBenefits.profitSharing'),
+      description: t('partnerBenefits.sharingDesc'),
       highlight: false
     }
   ];
@@ -69,10 +72,10 @@ const PartnerBenefits = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Staňte se partnerem – <span className="text-primary">vydělávejte s kávou bez starostí</span>
+            {t('partnerBenefits.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Připojte se k síti úspěšných partnerů KÁVES a začněte vydělávat s prémiovou kávou
+            {t('partnerBenefits.subtitle')}
           </p>
         </div>
 
@@ -97,7 +100,7 @@ const PartnerBenefits = () => {
           {/* Cooperation Models */}
           <div>
             <h3 className="text-2xl font-bold text-foreground mb-8">
-              Možnosti spolupráce:
+              {t('partnerBenefits.cooperationOptions')}
             </h3>
             <div className="space-y-4">
               {cooperationModels.map((model, index) => (
@@ -113,7 +116,7 @@ const PartnerBenefits = () => {
                     <div>
                       <h4 className="font-semibold text-foreground text-lg mb-2">
                         {model.title}
-                        {model.highlight && <span className="text-primary ml-2">⭐ Doporučeno</span>}
+                        {model.highlight && <span className="text-primary ml-2">{t('partnerBenefits.recommended')}</span>}
                       </h4>
                       <p className="text-muted-foreground">{model.description}</p>
                     </div>
@@ -132,7 +135,7 @@ const PartnerBenefits = () => {
                 className="w-full md:w-auto"
                 onClick={scrollToForm}
               >
-                Chci se stát partnerem
+                {t('partnerBenefits.becomePartner')}
               </Button>
             </div>
           </div>
@@ -149,7 +152,7 @@ const PartnerBenefits = () => {
             {/* Profit highlight */}
             <div className="absolute -bottom-6 -left-6 bg-primary text-primary-foreground p-6 rounded-2xl shadow-warm">
               <div className="text-2xl font-bold">12–48k Kč</div>
-              <div className="text-sm opacity-90">měsíčně</div>
+              <div className="text-sm opacity-90">{t('partnerBenefits.monthly')}</div>
             </div>
           </div>
         </div>

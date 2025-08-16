@@ -1,42 +1,44 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Check, Phone } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const FAQSection = () => {
+  const { t } = useTranslation();
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
 
   const faqs = [
     {
-      question: "Jaká je investice?",
-      answer: "Od 180 000 Kč při nákupu kávovaru. U pronájmu začínáme od 0 Kč počáteční investice s měsíčním poplatkem. Nabízíme také model sdílení zisku."
+      question: t('faq.questions.investment'),
+      answer: t('faq.questions.investmentAnswer')
     },
     {
-      question: "Kolik si vydělám?",
-      answer: "Běžně 12–48 000 Kč měsíčně, dle lokace a vytíženosti. Výdělek závisí na počtu prodaných káv a místních podmínkách. Pomůžeme vám najít ideální místo."
+      question: t('faq.questions.profit'),
+      answer: t('faq.questions.profitAnswer')
     },
     {
-      question: "Musím kávovar obsluhovat?",
-      answer: "Ne, vše servisujeme a doplňujeme za vás. Naši technici pravidelně doplňují kávu, čistí přístroje a starají se o technický provoz."
+      question: t('faq.questions.operation'),
+      answer: t('faq.questions.operationAnswer')
     },
     {
-      question: "Je potřeba voda?",
-      answer: "Ne, kávovar má vlastní filtr a nádrž. Stačí pouze elektrická zásuvka a 1 m² plochy. Vodní nádrž se doplňuje při servisních návštěvách."
+      question: t('faq.questions.water'),
+      answer: t('faq.questions.waterAnswer')
     },
     {
-      question: "Jak dlouhá je návratnost investice?",
-      answer: "Typicky 2–6 měsíců v závislosti na vytíženosti lokace. U frekventovaných míst může být návratnost ještě rychlejší."
+      question: t('faq.questions.payback'),
+      answer: t('faq.questions.paybackAnswer')
     },
     {
-      question: "Jaké jsou provozní náklady?",
-      answer: "Nízká spotřeba elektřiny (15 kWh/měs), servis a suroviny zajištěny v ceně. Celkové měsíční náklady cca 1 500 Kč."
+      question: t('faq.questions.costs'),
+      answer: t('faq.questions.costsAnswer')
     },
     {
-      question: "Můžu si vybrat typ kávy?",
-      answer: "Ano, nabízíme výběr z našich prémiových směsí z vlastní pražírny. Můžeme přizpůsobit nabídku vašim zákazníkům."
+      question: t('faq.questions.coffeeType'),
+      answer: t('faq.questions.coffeeTypeAnswer')
     },
     {
-      question: "Jak funguje platba za kávu?",
-      answer: "Kávovar přijímá platby kartou, mobilem i hotovost. Všechny transakce jsou automaticky evidovány a dostáváte přehledné výkazy."
+      question: t('faq.questions.payment'),
+      answer: t('faq.questions.paymentAnswer')
     }
   ];
 
@@ -45,10 +47,10 @@ const FAQSection = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Časté <span className="text-primary">dotazy</span>
+            {t('faq.title')}
           </h2>
           <p className="text-lg text-muted-foreground">
-            Odpovědi na nejčastější otázky o kávových stanicích KÁVES
+            {t('faq.subtitle')}
           </p>
         </div>
 
@@ -89,10 +91,10 @@ const FAQSection = () => {
         <div className="text-center mt-16">
           <Card className="coffee-card p-8">
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Stále máte otázky?
+              {t('faq.stillQuestions')}
             </h3>
             <p className="text-muted-foreground mb-6">
-              Rádi odpovíme na všechny vaše dotazy a připravíme nabídku na míru
+              {t('faq.happyToAnswer')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
@@ -103,7 +105,7 @@ const FAQSection = () => {
                     const button = document.getElementById('phone-button');
                     if (button) {
                       const originalText = button.innerHTML;
-                      button.innerHTML = '<Check className="w-4 h-4 mr-2" /> Zkopírováno!';
+                      button.innerHTML = `<Check className="w-4 h-4 mr-2" /> ${t('faq.copied')}`;
                       button.classList.add('bg-green-600', 'hover:bg-green-700');
                       
                       // Reset after 2 seconds
@@ -128,7 +130,7 @@ const FAQSection = () => {
                 }}
                 className="bg-secondary text-secondary-foreground px-8 py-3 rounded-md font-semibold hover:bg-secondary/90 coffee-transition"
               >
-                Napsat email
+                {t('faq.writeEmail')}
               </button>
             </div>
           </Card>

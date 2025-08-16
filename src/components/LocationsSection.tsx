@@ -1,7 +1,10 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const LocationsSection = () => {
+  const { t } = useTranslation();
+  
   const scrollToForm = () => {
     const formSection = document.getElementById('contact-form-section');
     const firstInput = document.getElementById('first-input');
@@ -19,48 +22,48 @@ const LocationsSection = () => {
   };
   const locations = [
     {
-      category: "Vzdělávací instituce",
+      category: t('locations.educational'),
       icon: "institution.png",
       places: [
-        "Střední škola Ostrava",
-        "Vysoká škola – Jihočeská univerzita",
-        "Studijní centrum PEC Praha"
+        t('locations.places.school1'),
+        t('locations.places.university1'),
+        t('locations.places.center1')
       ]
     },
     {
-      category: "Zdravotnictví",
+      category: t('locations.healthcare'),
       icon: "hospital.png",
       places: [
-        "Krevní centrum Ostrava",
-        "Nemocnice Praha",
-        "Poliklinika Brno"
+        t('locations.places.hospital1'),
+        t('locations.places.hospital2'),
+        t('locations.places.clinic1')
       ]
     },
     {
-      category: "Kultura a sport",
+      category: t('locations.culture'),
       icon: "hause.png",
       places: [
-        "Kulturní centrum Frýdlant",
-        "Koupaliště u Plzně",
-        "Fitness centrum Pardubice"
+        t('locations.places.cultural1'),
+        t('locations.places.pool1'),
+        t('locations.places.fitness1')
       ]
     }
   ];
 
   const testimonials = [
     {
-      text: "Skvělé řešení pro naši školu. Studenti si rychle oblíbili kvalitní kávu a my máme pasivní příjem.",
-      author: "Ředitel SŠ Ostrava",
+      text: t('locations.testimonial1'),
+      author: t('locations.author1'),
       rating: 5
     },
     {
-      text: "Instalace proběhla hladce, servis je bezproblémový. Kávovar pracuje spolehlivě už rok.",
-      author: "Správce nemocnice",
+      text: t('locations.testimonial2'),
+      author: t('locations.author2'),
       rating: 5
     },
     {
-      text: "Vynikající káva a skvělá podpora od týmu KÁVES. Doporučujeme všem.",
-      author: "Kulturní centrum",
+      text: t('locations.testimonial3'),
+      author: t('locations.author3'),
       rating: 5
     }
   ];
@@ -70,10 +73,10 @@ const LocationsSection = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Kde <span className="text-primary">KÁVES</span> funguje
+            {t('locations.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Zákazníci a zaměstnanci už si kávu vychutnávají po celé České republice
+            {t('locations.subtitle')}
           </p>
         </div>
 
@@ -104,26 +107,26 @@ const LocationsSection = () => {
         <div className="grid md:grid-cols-4 gap-6 mb-16">
           <Card className="coffee-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">50+</div>
-            <div className="text-foreground font-medium">Aktivních stanic</div>
+            <div className="text-foreground font-medium">{t('locations.activeStations')}</div>
           </Card>
           <Card className="coffee-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">95%</div>
-            <div className="text-foreground font-medium">Spokojenost partnerů</div>
+            <div className="text-foreground font-medium">{t('locations.satisfaction')}</div>
           </Card>
           <Card className="coffee-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">10k+</div>
-            <div className="text-foreground font-medium">Káv denně</div>
+            <div className="text-foreground font-medium">{t('locations.dailyCoffees')}</div>
           </Card>
           <Card className="coffee-card p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-2">3 roky</div>
-            <div className="text-foreground font-medium">Na trhu</div>
+            <div className="text-3xl font-bold text-primary mb-2">3 {t('locations.years')}</div>
+            <div className="text-foreground font-medium">{t('locations.onMarket')}</div>
           </Card>
         </div>
 
         {/* Testimonials */}
         <div>
           <h3 className="text-2xl font-bold text-foreground text-center mb-8">
-            Co říkají naši partneři
+            {t('locations.testimonials')}
           </h3>
           <div className="grid lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
@@ -148,16 +151,16 @@ const LocationsSection = () => {
         <div className="text-center mt-16">
           <Card className="coffee-card p-8 max-w-2xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Chcete být další na seznamu?
+              {t('locations.wantToBeNext')}
             </h3>
             <p className="text-muted-foreground mb-6">
-              Připojte se k síti úspěšných partnerů a začněte vydělávat s kávou KÁVES
+              {t('locations.joinNetwork')}
             </p>
             <Button 
               onClick={scrollToForm}
               className="bg-primary text-primary-foreground px-8 py-4 rounded-md font-semibold hover:bg-primary/90 coffee-transition shadow-warm"
             >
-              Získat nezávaznou nabídku
+              {t('locations.getOffer')}
             </Button>
           </Card>
         </div>
