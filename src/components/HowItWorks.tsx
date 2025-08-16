@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/card";
-
+import { useTranslation } from 'react-i18next';
 import React from "react";
 
 interface Step {
@@ -10,38 +10,22 @@ interface Step {
 }
 
 const HowItWorks = () => {
-  const steps: Step[] = [
-    {
-      number: '1',
-      title: 'Kontaktujte nás',
-      description: 'Vyplňte kontaktní formulář nebo nám zavolejte. Rádi vás seznámíme s naší nabídkou.',
-      icon: <img src="/foto-uploads/formular.png" alt="Formulář" className="w-11 h-11 inline-block align-middle" />,
-    },
-    {
-      number: '2',
-      title: 'Konzultace',
-      description: 'Domluvíme si osobní schůzku, kde vám představíme podrobnosti.',
-      icon: <img src="/foto-uploads/talking.png" alt="Konzultace" className="w-11 h-11 inline-block align-middle" />,
-    },
-    {
-      number: '3',
-      title: 'Výběr lokality',
-      description: 'Pomůžeme vám vybrat vhodnou lokalitu pro vaši kavárnu.',
-      icon: <img src="/foto-uploads/location.png" alt="Výběr lokality" className="w-11 h-11 inline-block align-middle" />,
-    },
-    {
-      number: '4',
-      title: 'Zaškolení a příprava',
-      description: 'Provedeme vás školením a přípravou na provoz kavárny.',
-      icon: <img src="/foto-uploads/teaching.png" alt="Zaškolení a příprava" className="w-11 h-11 inline-block align-middle" />,
-    },
-    {
-      number: '5',
-      title: 'Otevření kavárny',
-      description: 'Slavnostní otevření vaší nové kavárny s naší podporou.',
-      icon: <img src="/foto-uploads/money.png" alt="Otevření kavárny" className="w-11 h-11 inline-block align-middle" />,
-    },
+  const { t } = useTranslation();
+  
+  const stepIcons = [
+    <img src="/foto-uploads/formular.png" alt="Formulář" className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/talking.png" alt="Konzultace" className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/location.png" alt="Výběr lokality" className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/teaching.png" alt="Zaškolení a příprava" className="w-11 h-11 inline-block align-middle" />,
+    <img src="/foto-uploads/money.png" alt="Otevření kavárny" className="w-11 h-11 inline-block align-middle" />,
   ];
+
+  const steps = (t('howItWorks.steps', { returnObjects: true }) as any[]).map((step: any, index: number) => ({
+    number: (index + 1).toString(),
+    title: step.title,
+    description: step.description,
+    icon: stepIcons[index],
+  }));
 
   const scrollToForm = () => {
     const formSection = document.getElementById('contact-form-section');
@@ -64,10 +48,10 @@ const HowItWorks = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-            Jak to <span className="text-primary">funguje</span>
+            {t('howItWorks.title')}
           </h2>
           <p className="text-lg text-muted-foreground mb-6 max-w-3xl mx-auto">
-            Spusťte svůj byznys za 30 dní s plnou podporou ve všech etapách! Všechny kroky máme detailně promyšlené, vyřešené a připravené k okamžitému spuštění.
+            {t('howItWorks.subtitle')}
           </p>
         </div>
 
@@ -140,48 +124,30 @@ const HowItWorks = () => {
         <div className="text-center mt-16">
           <div className="coffee-card p-8 rounded-2xl max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-foreground mb-4">
-              Podnikání pro každého
+              {t('howItWorks.forEveryone.title')}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left mb-8">
               <div className="space-y-3">
-                <p className="text-muted-foreground"><span className="text-primary">✓</span> Pro začínající podnikatele</p>
-                <p className="text-muted-foreground"><span className="text-primary">✓</span> Pro ženy na mateřské dovolené</p>
-                <p className="text-muted-foreground"><span className="text-primary">✓</span> Pro expaty nebo imigranty</p>
+                {(t('howItWorks.forEveryone.categories', { returnObjects: true }) as string[]).slice(0, 3).map((item: string, index: number) => (
+                  <p key={index} className="text-muted-foreground"><span className="text-primary">✓</span> {item}</p>
+                ))}
               </div>
               <div className="space-y-3">
-                <p className="text-muted-foreground"><span className="text-primary">✓</span> Pro manažery</p>
-                <p className="text-muted-foreground"><span className="text-primary">✓</span> Pro podnikatele</p>
-                <p className="text-muted-foreground"><span className="text-primary">✓</span> Pro každého, kdo má zájem o další stabilní příjem</p>
+                {(t('howItWorks.forEveryone.categories', { returnObjects: true }) as string[]).slice(3).map((item: string, index: number) => (
+                  <p key={index + 3} className="text-muted-foreground"><span className="text-primary">✓</span> {item}</p>
+                ))}
               </div>
             </div>
           </div>
           <div className="coffee-card p-6 rounded-2xl max-w-xl mx-auto mt-6">
-            <h3 className="text-xl font-semibold text-primary mb-4">Co získáte?</h3>
+            <h3 className="text-xl font-semibold text-primary mb-4">{t('howItWorks.whatYouGet.title')}</h3>
             <ul className="space-y-2 max-w-lg mx-auto">
-              <li className="flex items-start space-x-3">
-                <span className="text-primary mt-1">✓</span>
-                <span className="text-foreground">Samoobslužný kávovar s prémiovým vzhledem</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-primary mt-1">✓</span>
-                <span className="text-foreground">Českou kvalitní kávu z pražírny</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-primary mt-1">✓</span>
-                <span className="text-foreground">Zabudovanou vodní nádrž s filtrem</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-primary mt-1">✓</span>
-                <span className="text-foreground">Možnost plateb kartou / mobilem</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-primary mt-1">✓</span>
-                <span className="text-foreground">Nízkou spotřebu elektřiny (15 kWh/měs)</span>
-              </li>
-              <li className="flex items-start space-x-3">
-                <span className="text-primary mt-1">✓</span>
-                <span className="text-foreground">Kompletní servis a čištění</span>
-              </li>
+              {(t('howItWorks.whatYouGet.items', { returnObjects: true }) as string[]).map((item: string, index: number) => (
+                <li key={index} className="flex items-start space-x-3">
+                  <span className="text-primary mt-1">✓</span>
+                  <span className="text-foreground">{item}</span>
+                </li>
+              ))}
             </ul>
           </div>
         </div>

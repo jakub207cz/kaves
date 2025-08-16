@@ -1,0 +1,117 @@
+{
+  "navigation": {
+    "home": "Domů",
+    "howItWorks": "Jak to funguje",
+    "calculator": "Kalkulačka",
+    "aboutUs": "O nás",
+    "contact": "Kontakt",
+    "faq": "Časté dotazy"
+  },
+  "hero": {
+    "brandIntro": "- čerstvě mletá káva, která na trhu chybí",
+    "titleLine1": "Otevřete si vlastní",
+    "titleLine2": "samoobslužnou kavárnu",
+    "subtitle": "a vydělávejte od 250 tisíc měsíčně",
+    "cta": "Chci více informací",
+    "ctaAriaLabel": "Přejít na kontaktní formulář",
+    "initialInvestment": "Vstupní investice",
+    "monthlyProfit": "Měsíční zisk",
+    "roiTime": "Návratnost",
+    "profitability": "Ziskovost",
+    "automaticOperation": "Automatický provoz",
+    "noEmployees": "Bez zaměstnanců",
+    "mobileBusiness": "Mobilní podnikání"
+  },
+  "about": {
+    "title": "O značce KÁVES",
+    "description": "KÁVES je hrdá česká společnost přinášející samoobslužné kávové stanice. Prémiová, čerstvě mletá káva z naší vlastní české pražírny, moderní design a provoz bez zaměstnanců. Vše vyrábíme s důrazem na kvalitu, tradici a poctivou českou práci.",
+    "comparison": {
+      "title": "Porovnání: Prodejní automaty VS KÁVES",
+      "vendingMachines": {
+        "title": "Prodejní stroje",
+        "subtitle": "Prodejní automaty jsou zastaralé, používají prášek a nejsou schopny poskytnout kvalitní nápoj",
+        "disadvantages": [
+          "Staromódní design kávovaru",
+          "Používají pochybné ingredience a nekvalitní, bezchutný kávový prášek",
+          "Většinou platba v hotovosti",
+          "Neexistuje žádná jedinečnost – podobné automaty jsou na každém rohu"
+        ]
+      },
+      "kaves": {
+        "title": "KÁVES",
+        "subtitle": "Buďte svým vlastním baristou – připravte si vlastní kávu s použitím sirupů a polev",
+        "advantages": [
+          "Nový formát na trhu a prémiový design",
+          "Vynikající chuť čerstvě pražených kávových zrn z české pražírny",
+          "Suroviny prémiové kvality",
+          "Vzdálená správa a sledování ziskovosti",
+          "Platba se provádí prostřednictvím plateb kartou / mobilem",
+          "Používání profesionálního kávovaru"
+        ]
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Jak to funguje",
+    "subtitle": "Spusťte svůj byznys za 30 dní s plnou podporou ve všech etapách! Všechny kroky máme detailně promyšlené, vyřešené a připravené k okamžitému spuštění.",
+    "steps": [
+      {
+        "title": "Kontaktujte nás",
+        "description": "Vyplňte kontaktní formulář nebo nám zavolejte. Rádi vás seznámíme s naší nabídkou."
+      },
+      {
+        "title": "Konzultace",
+        "description": "Domluvíme si osobní schůzku, kde vám představíme podrobnosti."
+      },
+      {
+        "title": "Výběr lokality",
+        "description": "Pomůžeme vám vybrat vhodnou lokalitu pro vaši kavárnu."
+      },
+      {
+        "title": "Zaškolení a příprava",
+        "description": "Provedeme vás školením a přípravou na provoz kavárny."
+      },
+      {
+        "title": "Otevření kavárny",
+        "description": "Slavnostní otevření vaší nové kavárny s naší podporou."
+      }
+    ],
+    "forEveryone": {
+      "title": "Podnikání pro každého",
+      "categories": [
+        "Pro začínající podnikatele",
+        "Pro ženy na mateřské dovolené",
+        "Pro expaty nebo imigranty",
+        "Pro manažery",
+        "Pro podnikatele",
+        "Pro každého, kdo má zájem o další stabilní příjem"
+      ]
+    },
+    "whatYouGet": {
+      "title": "Co získáte?",
+      "items": [
+        "Samoobslužný kávovar s prémiovým vzhledem",
+        "Českou kvalitní kávu z pražírny",
+        "Zabudovanou vodní nádrž s filtrem",
+        "Možnost plateb kartou / mobilem",
+        "Nízkou spotřebu elektřiny (15 kWh/měs)",
+        "Kompletní servis a čištění"
+      ]
+    }
+  },
+  "contact": {
+    "phone": "Telefon",
+    "email": "E-mail",
+    "form": "Formulář",
+    "goToContactForm": "Přejít na kontaktní formulář",
+    "copied": "Zkopírováno!"
+  },
+  "common": {
+    "loading": "Načítám...",
+    "error": "Došlo k chybě",
+    "success": "Úspěch",
+    "close": "Zavřít",
+    "submit": "Odeslat",
+    "cancel": "Zrušit"
+  }
+}

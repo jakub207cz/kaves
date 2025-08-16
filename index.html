@@ -1,50 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <style>
-    #google_translate_element,
-    #google_translate_element * {
-      display: none !important;
-      visibility: hidden !important;
-      height: 0 !important;
-      width: 0 !important;
-      position: absolute !important;
-      top: -9999px !important;
-      left: -9999px !important;
-      pointer-events: none !important;
-    }
-    .goog-te-banner-frame,
-    .goog-te-gadget-simple,
-    .goog-te-menu-value {
-      display: none !important;
-      visibility: hidden !important;
-      height: 0 !important;
-      width: 0 !important;
-      position: absolute !important;
-      top: -9999px !important;
-      left: -9999px !important;
-      pointer-events: none !important;
-    }
-  </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Káves - Prémiová káva pro váš business</title>
     <link rel="icon" href="/foto-uploads/c070cc0f-12b7-4933-b65b-885e034832df.png" type="image/png">
-
+  </head>
   <body>
     <div id="root"></div>
-    <!-- Google Translate widget -->
-    <div id="google_translate_element" style="position:fixed;top:0;right:0;z-index:1;"></div>
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-          pageLanguage: 'cs',
-          includedLanguages: 'cs,en,pl,ru',
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-        }, 'google_translate_element');
-      }
-    </script>
-    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

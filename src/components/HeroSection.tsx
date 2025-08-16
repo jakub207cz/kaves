@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
+import { useTranslation } from 'react-i18next';
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Image */}
@@ -22,18 +24,18 @@ const HeroSection = () => {
             {/* Small intro text */}
             <p className="text-lg md:text-xl mb-4 font-medium">
               <span className="text-primary">KÁVES </span> 
-              <span className="text-foreground">- čerstvě mletá káva, která na trhu chybí</span>
+              <span className="text-foreground">{t('hero.brandIntro')}</span>
             </p>
             
             {/* Main Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-  <span className="text-foreground">Otevřete si vlastní</span><br />
-  <span className="text-primary">samoobslužnou kavárnu</span>
-</h1>
+              <span className="text-foreground">{t('hero.titleLine1')}</span><br />
+              <span className="text-primary">{t('hero.titleLine2')}</span>
+            </h1>
             
             {/* Subheading */}
             <p className="text-xl md:text-2xl text-muted-foreground font-medium">
-              a vydělávejte od 250 tisíc měsíčně
+              {t('hero.subtitle')}
             </p>
 
             
@@ -44,7 +46,7 @@ const HeroSection = () => {
                 variant="default" 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg font-semibold"
-                aria-label="Přejít na kontaktní formulář"
+                aria-label={t('hero.ctaAriaLabel')}
                 onClick={() => {
                   const formSection = document.getElementById('contact-form-section');
                   const firstInput = document.getElementById('first-input');
@@ -61,7 +63,7 @@ const HeroSection = () => {
                   }, 500);
                 }}
               >
-                Chci více informací
+                {t('hero.cta')}
               </Button>
             </div>
             
@@ -69,17 +71,17 @@ const HeroSection = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border">
                 <div className="text-xl font-bold text-primary mb-1">250 000 Kč</div>
-                <div className="text-xs text-muted-foreground">Vstupní investice</div>
+                <div className="text-xs text-muted-foreground">{t('hero.initialInvestment')}</div>
               </div>
               
               <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border">
                 <div className="text-xl font-bold text-primary mb-1">70 000 Kč</div>
-                <div className="text-xs text-muted-foreground">Měsíční zisk</div>
+                <div className="text-xs text-muted-foreground">{t('hero.monthlyProfit')}</div>
               </div>
               
               <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border">
                 <div className="text-xl font-bold text-primary mb-1">12 měsíců</div>
-                <div className="text-xs text-muted-foreground">Návratnost</div>
+                <div className="text-xs text-muted-foreground">{t('hero.roiTime')}</div>
               </div>
             </div>
 
@@ -92,15 +94,15 @@ const HeroSection = () => {
           <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
           <div className="flex items-center space-x-3">
             <div className="text-2xl font-bold text-primary">60%</div>
-            <span className="text-foreground">Ziskovost</span>
+            <span className="text-foreground">{t('hero.profitability')}</span>
           </div>
           <div className="flex items-center space-x-3">
             <div className="text-2xl font-bold text-primary">24/7</div>
-            <span className="text-foreground">Automatický provoz</span>
+            <span className="text-foreground">{t('hero.automaticOperation')}</span>
           </div>
           <div className="flex items-center space-x-3">
             <div className="text-2xl font-bold text-primary">0</div>
-            <span className="text-foreground">Bez zaměstnanců</span>
+            <span className="text-foreground">{t('hero.noEmployees')}</span>
           </div>
           <div className="flex items-center space-x-3">
             <div className="text-2xl font-bold text-primary">
@@ -109,7 +111,7 @@ const HeroSection = () => {
                 <path d="M12 18h.01"/>
               </svg>
             </div>
-            <span className="text-foreground">Mobilní podnikání</span>
+            <span className="text-foreground">{t('hero.mobileBusiness')}</span>
           </div>
         </div>
       </div>

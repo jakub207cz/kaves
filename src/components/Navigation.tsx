@@ -1,46 +1,9 @@
 import { useState, useRef, useEffect } from "react";
-
+import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from "./LanguageSwitcher";
 
-// Helper to get current language from cookie
-function getCurrentLang() {
-  if (typeof document !== 'undefined') {
-    const match = document.cookie.match(/googtrans=\/cs\/([a-z]+)/);
-    if (match && match[1]) return match[1];
-  }
-  return 'cs';
-}
-
 const Navigation = () => {
-  // Stav pro Google Translate bar
-  const [translateBarActive, setTranslateBarActive] = useState(false);
-  const [currentLang, setCurrentLang] = useState<string>(getCurrentLang());
-
-  // Listen for language change events (if needed)
-  useEffect(() => {
-    const onLangChange = () => {
-      setCurrentLang(getCurrentLang());
-    };
-    window.addEventListener('languageChanged', onLangChange);
-    return () => {
-      window.removeEventListener('languageChanged', onLangChange);
-    };
-  }, []);
-
-  useEffect(() => {
-    function adjustNavbarForGoogleTranslate() {
-      const gtBar = document.querySelector('iframe.goog-te-banner-frame');
-      setTranslateBarActive(!!gtBar);
-    }
-    const observer = new MutationObserver(adjustNavbarForGoogleTranslate);
-    observer.observe(document.body, { childList: true, subtree: true });
-    window.addEventListener('DOMContentLoaded', adjustNavbarForGoogleTranslate);
-    adjustNavbarForGoogleTranslate();
-    return () => {
-      observer.disconnect();
-      window.removeEventListener('DOMContentLoaded', adjustNavbarForGoogleTranslate);
-    };
-  }, []);
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [copiedItem, setCopiedItem] = useState<string | null>(null);
   const copyTimeoutRef = useRef<number>();
@@ -96,15 +59,14 @@ const Navigation = () => {
   };
 
   const navItems = [
-    { href: "#jak-to-funguje", label: "Jak to funguje" },
-    { href: "#kalkulacka", label: "Kalkulačka" },
-    { href: "#o-nas", label: "O nás" },
-    { href: "#kontakt", label: "Kontakt" }
-    // Removed: { href: "#faq", label: "Časté dotazy" }
+    { href: "#jak-to-funguje", label: t('navigation.howItWorks') },
+    { href: "#kalkulacka", label: t('navigation.calculator') },
+    { href: "#o-nas", label: t('navigation.aboutUs') },
+    { href: "#kontakt", label: t('navigation.contact') }
   ];
 
   return (
-    <nav className={`fixed ${currentLang !== 'cs' ? 'top-[40px]' : 'top-0'} left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border${translateBarActive ? ' navbar--translate-active' : ''}`}>
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -150,7 +112,7 @@ const Navigation = () => {
             {/* CTA Button with Hover Menu */}
             <div className="hidden md:block relative group">
               <button className="bg-primary text-primary-foreground px-6 py-2 rounded-md text-sm font-semibold hover:bg-primary/90 coffee-transition">
-                Časté dotazy
+                {t('navigation.faq')}
               </button>
               
               {/* Hover Menu */}
@@ -163,10 +125,10 @@ const Navigation = () => {
                     <img src="/foto-uploads/phone.png" alt="Telefon" className="w-8 h-8" />
                     <div className="flex-1">
                       <div className="font-semibold text-foreground flex items-center gap-2">
-                        Telefon
+                        {t('contact.phone')}
                         {copiedItem === 'phone' && (
                           <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
-                            {("Zkopírováno!")}
+                            {t('contact.copied')}
                           </span>
                         )}
                       </div>
@@ -181,10 +143,10 @@ const Navigation = () => {
                     <img src="/foto-uploads/email.png" alt="E-mail" className="w-8 h-8" />
                     <div className="flex-1">
                       <div className="font-semibold text-foreground flex items-center gap-2">
-                        E-mail
+                        {t('contact.email')}
                         {copiedItem === 'email' && (
                           <span className="text-xs bg-green-100 text-green-800 px-2 py-0.5 rounded-full">
-                            {("Zkopírováno!")}
+                            {t('contact.copied')}
                           </span>
                         )}
                       </div>
@@ -200,8 +162,8 @@ const Navigation = () => {
                   >
                     <img src="/foto-uploads/formular.png" alt="Formulář" className="w-8 h-8" />
                     <div>
-                      <div className="font-semibold text-foreground">Formulář</div>
-                      <div className="text-sm text-muted-foreground">Přejít na kontaktní formulář</div>
+                      <div className="font-semibold text-foreground">{t('contact.form')}</div>
+                      <div className="text-sm text-muted-foreground">{t('contact.goToContactForm')}</div>
                     </div>
                   </button>
                   
@@ -265,7 +227,7 @@ const Navigation = () => {
                 }}
                 className="bg-primary text-primary-foreground block px-3 py-2 rounded-md text-base font-medium mt-4 w-full text-left"
               >
-                {("Časté dotazy")}
+                {t('navigation.faq')}
               </button>
             </div>
           </div>

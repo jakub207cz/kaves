@@ -1,0 +1,117 @@
+{
+  "navigation": {
+    "home": "Strona główna",
+    "howItWorks": "Jak to działa",
+    "calculator": "Kalkulator",
+    "aboutUs": "O nas",
+    "contact": "Kontakt",
+    "faq": "Często zadawane pytania"
+  },
+  "hero": {
+    "brandIntro": "- świeżo mielona kawa, której brakuje na rynku",
+    "titleLine1": "Otwórz własną",
+    "titleLine2": "samoobsługową kawiarnię",
+    "subtitle": "i zarabiaj od 250 tysięcy koron miesięcznie",
+    "cta": "Chcę więcej informacji",
+    "ctaAriaLabel": "Przejdź do formularza kontaktowego",
+    "initialInvestment": "Inwestycja początkowa",
+    "monthlyProfit": "Miesięczny zysk",
+    "roiTime": "Czas zwrotu",
+    "profitability": "Rentowność",
+    "automaticOperation": "Automatyczna obsługa",
+    "noEmployees": "Bez pracowników",
+    "mobileBusiness": "Biznes mobilny"
+  },
+  "about": {
+    "title": "O marce KÁVES",
+    "description": "KÁVES to dumna czeska firma wprowadzająca samoobsługowe stacje kawowe. Premium, świeżo mielona kawa z naszej własnej czeskiej palarni, nowoczesny design i działanie bez pracowników. Wszystko produkujemy z naciskiem na jakość, tradycję i uczciwą czeską pracę.",
+    "comparison": {
+      "title": "Porównanie: Automaty sprzedające VS KÁVES",
+      "vendingMachines": {
+        "title": "Automaty sprzedające",
+        "subtitle": "Automaty sprzedające są przestarzałe, używają proszku i nie są w stanie zapewnić wysokiej jakości napoju",
+        "disadvantages": [
+          "Staromodny design ekspresu do kawy",
+          "Używają wątpliwych składników i niskiej jakości, bezsmakowego proszku kawowego",
+          "Zwykle tylko płatność gotówką",
+          "Brak wyjątkowości - podobne automaty są na każdym rogu"
+        ]
+      },
+      "kaves": {
+        "title": "KÁVES",
+        "subtitle": "Bądź własnym baristą - przygotuj własną kawę używając syropów i dodatków",
+        "advantages": [
+          "Nowy format na rynku i premium design",
+          "Doskonały smak świeżo palonych ziaren kawy z czeskiej palarni",
+          "Składniki najwyższej jakości",
+          "Zdalne zarządzanie i monitorowanie rentowności",
+          "Płatność kartą/telefonem",
+          "Używanie profesjonalnego ekspresu do kawy"
+        ]
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "Jak to działa",
+    "subtitle": "Uruchom swój biznes w 30 dni z pełnym wsparciem na wszystkich etapach! Wszystkie kroki mamy szczegółowo przemyślane, rozwiązane i gotowe do natychmiastowego uruchomienia.",
+    "steps": [
+      {
+        "title": "Skontaktuj się z nami",
+        "description": "Wypełnij formularz kontaktowy lub zadzwoń do nas. Chętnie przedstawimy Ci naszą ofertę."
+      },
+      {
+        "title": "Konsultacja",
+        "description": "Umówimy się na osobiste spotkanie, gdzie przedstawimy Ci szczegóły."
+      },
+      {
+        "title": "Wybór lokalizacji",
+        "description": "Pomożemy Ci wybrać odpowiednią lokalizację dla Twojej kawiarni."
+      },
+      {
+        "title": "Szkolenie i przygotowanie",
+        "description": "Przeprowadzimy Cię przez szkolenie i przygotowanie do działania kawiarni."
+      },
+      {
+        "title": "Otwarcie kawiarni",
+        "description": "Uroczyste otwarcie Twojej nowej kawiarni z naszym wsparciem."
+      }
+    ],
+    "forEveryone": {
+      "title": "Biznes dla każdego",
+      "categories": [
+        "Dla początkujących przedsiębiorców",
+        "Dla kobiet na urlopie macierzyńskim",
+        "Dla ekspatów lub imigrantów",
+        "Dla menedżerów",
+        "Dla przedsiębiorców",
+        "Dla każdego zainteresowanego dodatkowym stabilnym dochodem"
+      ]
+    },
+    "whatYouGet": {
+      "title": "Co otrzymasz?",
+      "items": [
+        "Samoobsługowy ekspres do kawy o premium wyglądzie",
+        "Wysokiej jakości czeską kawę z palarni",
+        "Wbudowany zbiornik na wodę z filtrem",
+        "Możliwość płatności kartą/telefonem",
+        "Niskie zużycie energii elektrycznej (15 kWh/miesiąc)",
+        "Kompletny serwis i czyszczenie"
+      ]
+    }
+  },
+  "contact": {
+    "phone": "Telefon",
+    "email": "Email",
+    "form": "Formularz",
+    "goToContactForm": "Przejdź do formularza kontaktowego",
+    "copied": "Skopiowano!"
+  },
+  "common": {
+    "loading": "Ładowanie...",
+    "error": "Wystąpił błąd",
+    "success": "Sukces",
+    "close": "Zamknij",
+    "submit": "Wyślij",
+    "cancel": "Anuluj"
+  }
+}

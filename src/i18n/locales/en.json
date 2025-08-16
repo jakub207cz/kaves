@@ -1,0 +1,117 @@
+{
+  "navigation": {
+    "home": "Home",
+    "howItWorks": "How it Works",
+    "calculator": "Calculator",
+    "aboutUs": "About Us",
+    "contact": "Contact",
+    "faq": "FAQ"
+  },
+  "hero": {
+    "brandIntro": "- freshly ground coffee that's missing on the market",
+    "titleLine1": "Open your own",
+    "titleLine2": "self-service coffee shop",
+    "subtitle": "and earn from 250 thousand CZK monthly",
+    "cta": "I want more information",
+    "ctaAriaLabel": "Go to contact form",
+    "initialInvestment": "Initial investment",
+    "monthlyProfit": "Monthly profit",
+    "roiTime": "Return time",
+    "profitability": "Profitability",
+    "automaticOperation": "Automatic operation",
+    "noEmployees": "No employees",
+    "mobileBusiness": "Mobile business"
+  },
+  "about": {
+    "title": "About the KÁVES brand",
+    "description": "KÁVES is a proud Czech company bringing self-service coffee stations. Premium, freshly ground coffee from our own Czech roastery, modern design and operation without employees. Everything we produce with emphasis on quality, tradition and honest Czech work.",
+    "comparison": {
+      "title": "Comparison: Vending Machines VS KÁVES",
+      "vendingMachines": {
+        "title": "Vending machines",
+        "subtitle": "Vending machines are outdated, use powder and are not able to provide a quality drink",
+        "disadvantages": [
+          "Old-fashioned coffee machine design",
+          "Use questionable ingredients and low-quality, tasteless coffee powder",
+          "Usually cash payment only",
+          "No uniqueness - similar machines are on every corner"
+        ]
+      },
+      "kaves": {
+        "title": "KÁVES",
+        "subtitle": "Be your own barista - prepare your own coffee using syrups and toppings",
+        "advantages": [
+          "New market format and premium design",
+          "Excellent taste of freshly roasted coffee beans from Czech roastery",
+          "Premium quality ingredients",
+          "Remote management and profitability monitoring",
+          "Payment is made through card/mobile payments",
+          "Use of professional coffee machine"
+        ]
+      }
+    }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "subtitle": "Launch your business in 30 days with full support at all stages! We have all steps carefully thought out, solved and ready for immediate launch.",
+    "steps": [
+      {
+        "title": "Contact us",
+        "description": "Fill out the contact form or call us. We'll be happy to introduce you to our offer."
+      },
+      {
+        "title": "Consultation",
+        "description": "We'll arrange a personal meeting where we'll present you the details."
+      },
+      {
+        "title": "Location selection",
+        "description": "We'll help you choose a suitable location for your coffee shop."
+      },
+      {
+        "title": "Training and preparation",
+        "description": "We'll guide you through training and preparation for coffee shop operation."
+      },
+      {
+        "title": "Coffee shop opening",
+        "description": "Grand opening of your new coffee shop with our support."
+      }
+    ],
+    "forEveryone": {
+      "title": "Business for everyone",
+      "categories": [
+        "For beginning entrepreneurs",
+        "For women on maternity leave",
+        "For expats or immigrants",
+        "For managers",
+        "For entrepreneurs",
+        "For anyone interested in additional stable income"
+      ]
+    },
+    "whatYouGet": {
+      "title": "What will you get?",
+      "items": [
+        "Self-service coffee machine with premium appearance",
+        "Quality Czech coffee from roastery",
+        "Built-in water tank with filter",
+        "Card/mobile payment option",
+        "Low electricity consumption (15 kWh/month)",
+        "Complete service and cleaning"
+      ]
+    }
+  },
+  "contact": {
+    "phone": "Phone",
+    "email": "Email",
+    "form": "Form",
+    "goToContactForm": "Go to contact form",
+    "copied": "Copied!"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "close": "Close",
+    "submit": "Submit",
+    "cancel": "Cancel"
+  }
+}
