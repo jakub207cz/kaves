@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next';
+
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="bg-background border-t border-border py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -14,8 +17,7 @@ const Footer = () => {
               <h3 className="text-2xl font-bold text-primary"></h3>
             </div>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Prémiové samoobslužné kávové stanice pro firmy, školy a veřejná místa. 
-              Vydělávejte s kvalitní kávou bez starostí.
+              {t('footer.description')}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary hover:text-primary/80 coffee-transition flex items-center">
@@ -27,19 +29,19 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Rychlé odkazy</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
-              <li><a href="#o-nas" className="text-muted-foreground hover:text-primary coffee-transition">O nás</a></li>
-              <li><a href="#partnerstvi" className="text-muted-foreground hover:text-primary coffee-transition">Partnerství</a></li>
-              <li><a href="#kalkulacka" className="text-muted-foreground hover:text-primary coffee-transition">Kalkulačka</a></li>
-              <li><a href="#lokace" className="text-muted-foreground hover:text-primary coffee-transition">Kde fungujeme</a></li>
-              <li><a href="#faq" className="text-muted-foreground hover:text-primary coffee-transition">FAQ</a></li>
+              <li><a href="#o-nas" className="text-muted-foreground hover:text-primary coffee-transition">{t('footer.aboutUs')}</a></li>
+              <li><a href="#partnerstvi" className="text-muted-foreground hover:text-primary coffee-transition">{t('footer.partnership')}</a></li>
+              <li><a href="#kalkulacka" className="text-muted-foreground hover:text-primary coffee-transition">{t('footer.calculator')}</a></li>
+              <li><a href="#lokace" className="text-muted-foreground hover:text-primary coffee-transition">{t('footer.locations')}</a></li>
+              <li><a href="#faq" className="text-muted-foreground hover:text-primary coffee-transition">{t('footer.faq')}</a></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">Kontakt</h4>
+            <h4 className="font-semibold text-foreground mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2">
               <li className="text-muted-foreground">
                 <img src="/foto-uploads/phone.png" alt="Telefon" className="w-6 h-6 inline-block mr-2" /> +420 777 445 798
@@ -59,14 +61,14 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2025 Káves. Všechna práva vyhrazena.
+            {t('footer.copyright')}
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-muted-foreground hover:text-primary coffee-transition">
-              Ochrana osobních údajů
+              {t('footer.privacy')}
             </a>
             <a href="#" className="text-muted-foreground hover:text-primary coffee-transition">
-              Obchodní podmínky
+              {t('footer.terms')}
             </a>
           </div>
         </div>

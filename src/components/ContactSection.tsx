@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -9,6 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
+  const { t } = useTranslation();
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
@@ -41,8 +43,8 @@ const ContactSection = () => {
       }
 
       toast({
-        title: "Formulář byl úspěšně odeslán!",
-        description: "Ozveme se vám do 24 hodin s prvotní analýzou.",
+        title: t('contact.formSuccess'),
+        description: t('contact.formSuccessDesc'),
       });
 
       // Reset form
@@ -56,8 +58,8 @@ const ContactSection = () => {
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
-        title: "Chyba při odesílání",
-        description: "Zkuste to prosím znovu nebo nás kontaktujte telefonicky.",
+        title: t('contact.formError'),
+        description: t('contact.formErrorDesc'),
         variant: "destructive",
       });
     } finally {
@@ -94,10 +96,10 @@ const ContactSection = () => {
             <img src="/foto-uploads/c070cc0f-12b7-4933-b65b-885e034832df.png" alt="KÁVES Logo" className="h-10 w-auto" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Připraveni <span className="text-primary">začít</span>?
+            {t('contact.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Zaujala vás KÁVES stanice? Spojte se s námi a připravíme vám řešení na míru.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -105,33 +107,33 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="coffee-card p-8">
             <h3 className="text-2xl font-bold text-foreground mb-6">
-              Získat nezávaznou nabídku
+              {t('contact.formTitle')}
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-foreground font-medium mb-2">
-                    Jméno *
+                    {t('contact.name')} *
                   </label>
                   <Input
                     id="first-input"
                     value={formData.name}
                     onChange={(e) => handleInputChange("name", e.target.value)}
-                    placeholder="Vaše jméno"
+                    placeholder={t('contact.namePlaceholder')}
                     required
                     className="bg-input border-border"
                   />
                 </div>
                 <div>
                   <label className="block text-foreground font-medium mb-2">
-                    E-mail *
+                    {t('contact.email')} *
                   </label>
                   <Input
                     type="email"
                     value={formData.email}
                     onChange={(e) => handleInputChange("email", e.target.value)}
-                    placeholder="vas@email.cz"
+                    placeholder={t('contact.emailPlaceholder')}
                     required
                     className="bg-input border-border"
                   />
@@ -141,12 +143,12 @@ const ContactSection = () => {
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-foreground font-medium mb-2">
-                    Telefon *
+                    {t('contact.phone')} *
                   </label>
                   <Input
                     value={formData.phone}
                     onChange={(e) => handleInputChange("phone", e.target.value)}
-                    placeholder="+420 xxx xxx xxx"
+                    placeholder={t('contact.phonePlaceholder')}
                     required
                     className="bg-input border-border"
                   />
@@ -154,17 +156,17 @@ const ContactSection = () => {
                 
                 <div>
                   <label className="block text-foreground font-medium mb-2">
-                    Preferovaný model spolupráce
+                    {t('contact.cooperationModel')}
                   </label>
                   <Select onValueChange={(value) => handleInputChange("cooperationModel", value)}>
                     <SelectTrigger className="bg-input border-border w-full">
-                      <SelectValue placeholder="Vyberte model" />
+                      <SelectValue placeholder={t('contact.selectModel')} />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="nakup">Nákup kávovaru - plné vlastnictví</SelectItem>
-                      <SelectItem value="pronajem">Pronájem - bez vstupní investice</SelectItem>
-                      <SelectItem value="sdileni">Sdílení zisku - minimální investice</SelectItem>
-                      <SelectItem value="nevim">Nevím, poraďte mi</SelectItem>
+                      <SelectItem value="nakup">{t('contact.buyModel')}</SelectItem>
+                      <SelectItem value="pronajem">{t('contact.rentModel')}</SelectItem>
+                      <SelectItem value="sdileni">{t('contact.shareModel')}</SelectItem>
+                      <SelectItem value="nevim">{t('contact.dontKnowModel')}</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
@@ -172,26 +174,26 @@ const ContactSection = () => {
 
               <div>
                 <label className="block text-foreground font-medium mb-2">
-                  Zpráva (volitelné)
+                  {t('contact.message')}
                 </label>
                 <Textarea
                   value={formData.message}
                   onChange={(e) => handleInputChange("message", e.target.value)}
-                  placeholder="Další informace, dotazy..."
+                  placeholder={t('contact.messagePlaceholder')}
                   className="bg-input border-border min-h-24"
                 />
               </div>
 
               <Button type="submit" variant="hero" className="w-full mb-2" disabled={isSubmitting}>
-                {isSubmitting ? "Odesílám..." : "Získat nezávaznou nabídku"}
+                {isSubmitting ? t('contact.submitting') : t('contact.getOffer')}
               </Button>
               <p className="text-xs text-muted-foreground text-center">
-                Odesláním formuláře souhlasíte se zpracováním osobních údajů v souladu s{" "}
+                {t('contact.privacyText')} {" "}
                 <Link 
                   to="/zasady-ochrany-osobnich-udaju" 
                   className="text-primary hover:underline"
                 >
-                  zásadami ochrany osobních údajů
+                  {t('contact.privacyLink')}
                 </Link>
                 .
               </p>
@@ -202,20 +204,20 @@ const ContactSection = () => {
           <div className="space-y-8">
             <Card className="coffee-card p-8">
               <h3 className="text-xl font-bold text-foreground mb-6">
-                Kontaktní informace
+                {t('contact.contactInfo')}
               </h3>
               <div className="space-y-4">
                 <div className="flex items-center space-x-4">
                   <img src="/foto-uploads/phone.png" alt="Telefon" className="w-8 h-8" />
                   <div>
-                    <div className="font-semibold text-foreground">Telefon</div>
+                    <div className="font-semibold text-foreground">{t('contact.phone')}</div>
                     <div className="text-muted-foreground">+420 777 445 798</div>
                   </div>
                 </div>
                 <div className="flex items-center space-x-4">
                   <img src="/foto-uploads/email.png" alt="E-mail" className="w-8 h-8" />
                   <div>
-                    <div className="font-semibold text-foreground">E-mail</div>
+                    <div className="font-semibold text-foreground">{t('contact.email')}</div>
                     <div className="text-muted-foreground">info@joinkaves.cz</div>
                   </div>
                 </div>
@@ -231,16 +233,10 @@ const ContactSection = () => {
 
             <Card className="coffee-card p-8">
               <h3 className="text-xl font-bold text-foreground mb-6">
-                Co získáte kontaktováním
+                {t('contact.benefits.title')}
               </h3>
               <ul className="space-y-3">
-                {[
-                  "Nezávaznou konzultaci zdarma",
-                  "Analýzu vhodnosti vaší lokace",
-                  "Individuální cenovou nabídku",
-                  "Návrh optimálního modelu spolupráce",
-                  "Odpovědi na všechny vaše otázky"
-                ].map((benefit, index) => (
+                {(t('contact.benefits.items', { returnObjects: true }) as string[]).map((benefit: string, index: number) => (
                   <li key={index} className="flex items-start space-x-3">
                     <span className="text-primary mt-1">✓</span>
                     <span className="text-foreground">{benefit}</span>
@@ -251,14 +247,14 @@ const ContactSection = () => {
 
             <Card className="coffee-card p-8">
               <h3 className="text-xl font-bold text-foreground mb-4">
-                Rychlá odpověď zaručena
+                {t('contact.fastResponse.title')}
               </h3>
               <p className="text-muted-foreground mb-4">
-                Ozveme se vám do 24 hodin s prvotní analýzou a návrhem řešení.
+                {t('contact.fastResponse.subtitle')}
               </p>
               <div className="bg-primary/10 p-4 rounded-lg">
-                <div className="text-primary font-semibold">⚡ Expresní konzultace</div>
-                <div className="text-foreground text-sm">Volejte přímo: +420 777 445 798</div>
+                <div className="text-primary font-semibold">⚡ {t('contact.fastResponse.express')}</div>
+                <div className="text-foreground text-sm">{t('contact.fastResponse.callDirect')}</div>
               </div>
             </Card>
           </div>
