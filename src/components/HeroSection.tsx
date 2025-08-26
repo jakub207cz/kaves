@@ -18,9 +18,9 @@ const HeroSection = () => {
       
       {/* Content */}
       <div className="relative z-10 w-full">
-        <div className="flex items-center justify-center min-h-screen">
-          {/* Centered Content */}
-          <div className="max-w-4xl mx-auto space-y-8 p-12 rounded-2xl text-center">
+        <div className="flex items-center justify-start min-h-screen pl-8 md:pl-16 lg:pl-24">
+          {/* Left-aligned Content */}
+          <div className="max-w-4xl space-y-8 p-12 rounded-2xl text-left">
             {/* Small intro text */}
             <p className="text-lg md:text-xl mb-4 font-medium">
               <span className="text-primary">KÁVES </span> 
@@ -41,7 +41,7 @@ const HeroSection = () => {
             
 
             {/* CTA Button */}
-            <div className="flex items-center justify-center gap-4">
+            <div className="flex items-center justify-start gap-4">
               <Button 
                 variant="default" 
                 size="lg" 
