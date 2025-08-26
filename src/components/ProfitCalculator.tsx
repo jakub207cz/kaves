@@ -8,13 +8,13 @@ import { useTranslation } from "react-i18next";
 
 const ProfitCalculator = () => {
   const { t } = useTranslation();
-  const [dailyCoffees, setDailyCoffees] = useState([80]);
-  const [coffeePrice, setCoffeePrice] = useState([50]);
+  const [dailyCoffees, setDailyCoffees] = useState([30]);
+  const coffeePrice = 50; // Fixed at 50 CZK - no user input
   
   const monthlyCosts = 2050; // Kč
   const coffeeCost = 14.15; // Kč náklady na jednu kávu (káva, mléko, cukr)
   
-  const dailyProfit = (coffeePrice[0] - coffeeCost) * dailyCoffees[0];
+  const dailyProfit = (coffeePrice - coffeeCost) * dailyCoffees[0];
   const monthlyProfit = dailyProfit * 31 - monthlyCosts;
   const investment = 202029; // Kč
   const paybackMonths = Math.round(investment / monthlyProfit * 10) / 10;
@@ -65,33 +65,23 @@ const ProfitCalculator = () => {
                         <Slider
                           value={dailyCoffees}
                           onValueChange={setDailyCoffees}
-                          min={13}
-                          max={140}
+                          min={30}
+                          max={100}
                           step={1}
                           className="w-full"
                         />
                         <div className="flex justify-between text-sm text-muted-foreground mt-2">
-                          <span>13 {t('calculator.coffees')}</span>
-                          <span>140 {t('calculator.coffees')}</span>
+                          <span>30 {t('calculator.coffees')}</span>
+                          <span>100 {t('calculator.coffees')}</span>
                         </div>
                       </div>
 
-                      <div>
-                        <label className="block text-foreground font-medium mb-4">
-                          {t('calculator.sellingPrice')} <span className="text-primary font-bold">{coffeePrice[0]} Kč</span>
+                      <div className="coffee-card p-4 rounded-lg">
+                        <label className="block text-foreground font-medium mb-2">
+                          {t('calculator.sellingPrice')}
                         </label>
-                        <Slider
-                          value={coffeePrice}
-                          onValueChange={setCoffeePrice}
-                          min={14.15}
-                          max={140}
-                          step={1}
-                          className="w-full"
-                        />
-                        <div className="flex justify-between text-sm text-muted-foreground mt-2">
-                          <span>14,15 Kč</span>
-                          <span>140 Kč</span>
-                        </div>
+                        <div className="text-2xl font-bold text-primary">50 Kč</div>
+                        <div className="text-sm text-muted-foreground">{t('calculator.fixedPrice')}</div>
                       </div>
 
                        <div className="coffee-card p-4 rounded-lg">

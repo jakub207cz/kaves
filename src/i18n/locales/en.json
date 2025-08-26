@@ -307,6 +307,7 @@
     "setParameters": "Set parameters:",
     "averageCoffees": "Average coffees per day:",
     "sellingPrice": "Coffee selling price:",
+    "fixedPrice": "Fixed price",
     "operatingCosts": "Operating costs",
     "perMonth": "/month",
     "yourRevenue": "Your revenue:",
