@@ -55,62 +55,35 @@ const HowItWorks = () => {
           </p>
         </div>
 
-        {/* Desktop Timeline */}
-        <div className="hidden lg:block">
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-primary via-primary to-primary/50 transform -translate-y-1/2" />
-            
-            {/* Steps */}
-            <div className="grid grid-cols-5 gap-8">
-              {steps.map((step, index) => (
-                <div key={index} className="relative">
-                  {/* Step Number Circle */}
-                  <div className="relative z-10 w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center mx-auto mb-6 shadow-warm">
-                    <span className="text-xl font-bold">{step.number}</span>
-                  </div>
-                  
-                  {/* Step Card */}
-                  <Card className="coffee-card p-6 text-center h-48 flex flex-col justify-center">
-                    <div className="text-3xl mb-3">{step.icon}</div>
-                    <h3 className="font-semibold text-foreground mb-2 text-sm leading-tight">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground text-xs leading-relaxed">
-                      {step.description}
-                    </p>
-                  </Card>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Vertical Timeline */}
-        <div className="lg:hidden space-y-8">
+        {/* Vertical Steps Layout */}
+        <div className="space-y-8 max-w-4xl mx-auto">
           {steps.map((step, index) => (
             <div key={index} className="relative">
-              {/* Vertical Line */}
+              {/* Connecting Line */}
               {index < steps.length - 1 && (
-                <div className="absolute left-8 top-16 w-1 h-16 bg-primary/50" />
+                <div className="absolute left-8 top-20 w-1 h-12 bg-primary/50 hidden sm:block" />
               )}
               
-              <div className="flex items-start space-x-6">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
                 {/* Step Number */}
-                <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-warm flex-shrink-0">
+                <div className="w-16 h-16 bg-primary text-primary-foreground rounded-full flex items-center justify-center shadow-warm flex-shrink-0 mx-auto sm:mx-0">
                   <span className="text-xl font-bold">{step.number}</span>
                 </div>
                 
                 {/* Step Content */}
-                <Card className="coffee-card p-6 flex-1">
-                  <div className="text-center">
-                    <div className="text-3xl mb-3">{step.icon}</div>
-                    <h3 className="font-semibold text-foreground mb-3 text-lg">
-                      {step.title}
-                    </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
-                      {step.description}
-                    </p>
+                <Card className="coffee-card p-6 flex-1 w-full animate-fade-in">
+                  <div className="text-center sm:text-left">
+                    <div className="flex flex-col sm:flex-row sm:items-start sm:space-x-4">
+                      <div className="text-4xl mb-4 sm:mb-0 sm:mt-2">{step.icon}</div>
+                      <div className="flex-1">
+                        <h3 className="font-bold text-foreground mb-3 text-xl">
+                          {step.title}
+                        </h3>
+                        <p className="text-muted-foreground text-base leading-relaxed">
+                          {step.description}
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </Card>
               </div>
