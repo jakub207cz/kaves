@@ -68,18 +68,18 @@ const HeroSection = () => {
             </div>
             
             {/* Additional info */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+              <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border text-center">
                 <div className="text-xl font-bold text-primary mb-1">250 000 Kč</div>
                 <div className="text-xs text-muted-foreground">{t('hero.initialInvestment')}</div>
               </div>
               
-              <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border">
+              <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border text-center">
                 <div className="text-xl font-bold text-primary mb-1">70 000 Kč</div>
                 <div className="text-xs text-muted-foreground">{t('hero.monthlyProfit')}</div>
               </div>
               
-              <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border">
+              <div className="bg-card/90 backdrop-blur-sm rounded-lg p-4 border text-center">
                 <div className="text-xl font-bold text-primary mb-1">12 měsíců</div>
                 <div className="text-xs text-muted-foreground">{t('hero.roiTime')}</div>
               </div>
