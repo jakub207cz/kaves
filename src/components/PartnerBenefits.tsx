@@ -49,23 +49,6 @@ const PartnerBenefits = () => {
     }
   ];
 
-  const cooperationModels = [
-    {
-      title: t('partnerBenefits.machinePurchase'),
-      description: t('partnerBenefits.purchaseDesc'),
-      highlight: true
-    },
-    {
-      title: t('partnerBenefits.rental'),
-      description: t('partnerBenefits.rentalDesc'),
-      highlight: false
-    },
-    {
-      title: t('partnerBenefits.profitSharing'),
-      description: t('partnerBenefits.sharingDesc'),
-      highlight: false
-    }
-  ];
 
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted/20">
@@ -97,51 +80,8 @@ const PartnerBenefits = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Cooperation Models */}
-          <div>
-            <h3 className="text-2xl font-bold text-foreground mb-8">
-              {t('partnerBenefits.cooperationOptions')}
-            </h3>
-            <div className="space-y-4">
-              {cooperationModels.map((model, index) => (
-                <Card 
-                  key={index} 
-                  className={`p-6 coffee-transition hover:scale-105 ${
-                    model.highlight 
-                      ? 'coffee-card ring-2 ring-primary coffee-glow' 
-                      : 'coffee-card'
-                  }`}
-                >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h4 className="font-semibold text-foreground text-lg mb-2">
-                        {model.title}
-                        {model.highlight && <span className="text-primary ml-2">{t('partnerBenefits.recommended')}</span>}
-                      </h4>
-                      <p className="text-muted-foreground">{model.description}</p>
-                    </div>
-                    {model.highlight && (
-                      <div className="text-primary font-bold text-2xl">→</div>
-                    )}
-                  </div>
-                </Card>
-              ))}
-            </div>
-            
-            <div className="mt-8">
-              <Button 
-                variant="hero" 
-                size="lg" 
-                className="w-full md:w-auto"
-                onClick={scrollToForm}
-              >
-                {t('partnerBenefits.becomePartner')}
-              </Button>
-            </div>
-          </div>
-
           {/* Image */}
-          <div className="relative">
+          <div className="relative mx-auto">
             <div className="coffee-card rounded-2xl overflow-hidden">
               <img 
                 src="/foto-uploads/84fd9376-0228-4a9c-864c-624b7c2cc252.png"
