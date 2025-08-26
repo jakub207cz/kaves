@@ -103,16 +103,14 @@ const HowItWorks = () => {
                 
                 {/* Step Content */}
                 <Card className="coffee-card p-6 flex-1">
-                  <div className="flex items-start space-x-4">
-                    <div className="text-3xl">{step.icon}</div>
-                    <div>
-                      <h3 className="font-semibold text-foreground mb-2">
-                        {step.title}
-                      </h3>
-                      <p className="text-muted-foreground">
-                        {step.description}
-                      </p>
-                    </div>
+                  <div className="text-center">
+                    <div className="text-3xl mb-3">{step.icon}</div>
+                    <h3 className="font-semibold text-foreground mb-3 text-lg">
+                      {step.title}
+                    </h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      {step.description}
+                    </p>
                   </div>
                 </Card>
               </div>
